@@ -24,18 +24,6 @@ Writeups may include:
 - Lessons learned
 - Remediation notes
 
-Example structure:
-
-```text
-TryHackMe-Writeups/
-├── README.md
-├── Jr-Penetration-Tester/
-│   └── Privilege-Escalation/
-│       └── Jump.md
-└── assets/
-    └── screenshots/
-```
-
 ## Completed Writeups
 
 | Room | Path | Status |
