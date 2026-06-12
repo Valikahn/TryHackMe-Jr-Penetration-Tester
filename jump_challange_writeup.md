@@ -4,6 +4,8 @@
 >
 > **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
 >
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under CC BY 4.0. Any scripts or code snippets are provided under the MIT Licence.
+> 
 ## Lab Summary
 
 TryHackMe `Jump` privilege escalation challenge. 
