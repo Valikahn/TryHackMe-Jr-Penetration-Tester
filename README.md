@@ -34,16 +34,15 @@ Writeups may include:
 
 The tools used vary by room, but may include:
 
-- Nmap / Rustscan
 - [Nmap](https://nmap.org/) / [Rustscan](https://github.com/RustScan/RustScan)
-- FTP
-- SSH
-- Netcat
-- Penelope
-- LinPEAS
-- pspy
-- John the Ripper
-- Hydra
+- [vsFTP](https://security.appspot.com/vsftpd.html)
+- [SSH](https://www.kali.org/tools/openssh/)
+- [Netcat](https://www.kali.org/tools/netcat/)
+- [Penelope](https://www.kali.org/tools/penelope)
+- [peass-ng](https://www.kali.org/tools/peass-ng/)
+- [Pspy](https://www.kali.org/tools/pspy/)
+- [John](https://www.kali.org/tools/john/)
+- [Hydra](https://www.kali.org/tools/hydra/)
 - ffuf
 - Feroxbuster
 - Impacket
