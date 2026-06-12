@@ -77,8 +77,8 @@ Do not use these techniques against systems that you do not own or do not have e
 
 ## Spoiler Warning
 
-Some writeups 'may' contain spoilers, including flags, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
+Some writeups `MAY` contain spoilers, including flags, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
 
 ## Author
 
-Created as part of my cybersecurity learning journey through TryHackMe.
+Created by V4L1K4HN as part of my cybersecurity learning journey through TryHackMe.
