@@ -41,6 +41,16 @@ The tools used vary by room, but may include:
 - Penelope
 - LinPEAS
 - pspy
+- John the Ripper
+- Hydra
+- ffuf
+- Feroxbuster
+- Impacket
+- Hashcat
+- NetExec / nxc
+- Evil-WinRM
+- BloodHound
+- Burp Suite
 - sudo enumeration
 - Linux manual enumeration
 - Standard Kali Linux tooling
@@ -67,7 +77,7 @@ Do not use these techniques against systems that you do not own or do not have e
 
 ## Spoiler Warning
 
-Some writeups may contain spoilers, including flags, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
+Some writeups 'may' contain spoilers, including flags, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
 
 ## Author
 
