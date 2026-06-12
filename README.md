@@ -57,6 +57,10 @@ The tools used vary by room, but may include:
 - [CeWL](https://www.kali.org/tools/cewl/)
 - [BloodHound](https://www.kali.org/tools/bloodhound/)
 - [Burpsuite](https://www.kali.org/tools/burpsuite/)
+- [Metasploit Framework](https://www.kali.org/tools/metasploit-framework/)
+- [sshuttle](https://www.kali.org/tools/sshuttle/)
+- [rpivot](https://github.com/klsecservices/rpivot)
+- [Chisel](https://www.kali.org/tools/chisel/)
 - [sudo privilege enumeration](https://man7.org/linux/man-pages/man5/sudoers.5.html) / [GTFOBins](https://gtfobins.github.io/)
 - [Manual Linux privilege escalation enumeration](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
 
