@@ -102,3 +102,11 @@ I am also active in cybersecurity learning communities, including Discord, where
 Feel free to follow my progress, compare approaches, or reach out if you are working through similar rooms.
 
 Created by V4L1K4HN as part of my cybersecurity learning journey through TryHackMe.
+
+## Licence
+
+This repository is licensed under the Creative Commons Attribution 4.0 International Licence.
+
+You are free to share and adapt the material in this repository, provided appropriate credit is given.
+
+Licence: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
