@@ -77,7 +77,8 @@ Do not use these techniques against systems that you do not own or do not have e
 
 ## Spoiler Warning
 
-Some writeups `MAY` contain spoilers, including flags, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
+Writeups `MAY` contain spoilers, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
+Writeups `WILL NEVER` contain passwords, cracked or otherwise, no hashes or flags.
 
 ## Author
 
