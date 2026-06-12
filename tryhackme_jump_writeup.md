@@ -1,8 +1,10 @@
 # TryHackMe: Jump — Full Walkthrough
 
 > **Spoiler warning:** This write-up contains the full exploitation chain and all flags for the TryHackMe `Jump` privilege escalation challenge.
+> 
+> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
 >
-> **Please note:** No flags codes are shown in this write-up.
+> **No flag codes are shown in this write-up!**
 
 ## Lab Summary
 
