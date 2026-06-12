@@ -1,6 +1,6 @@
 # TryHackMe Writeups
 
-This repository contains my personal TryHackMe writeups, notes, and walkthroughs from completed rooms and learning paths.
+This repository contains my personal [TryHackMe](https://tryhackme.com/) writeups, notes, and walkthroughs from completed rooms and learning paths.
 
 The purpose of this repository is to document my methodology, commands, observations, mistakes, and final exploitation paths in a way that is useful for revision, portfolio building, and future reference.
 
