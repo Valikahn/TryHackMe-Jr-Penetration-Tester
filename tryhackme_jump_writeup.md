@@ -533,16 +533,6 @@ A systemd service ran `/usr/local/bin/healthcheck` as `monitor_user`. The script
 
 `sudo -l` showed that `ops_user` could run `/usr/bin/less` as root without a password. Running `less` as root and using `!/bin/bash` spawned a root shell.
 
-## Flags Collected
-
-```text
-recon_user:   THM{5a3f1c92-7b4e-4d91-8c2a-1f6e9b2a4c11}
-dev_user:     THM{8d2b7a41-3f9c-4e55-b1a2-6c7d9e8f0123}
-monitor_user: THM{c1e9a7b3-2d44-4a88-9f7e-3b6c2d5a9f77}
-ops_user:     THM{f7a2c9d1-6e33-4b55-8d11-9c0a7b2e4d88}
-root:         THM{2b8e6c4a-1d55-4f90-a3c7-5e9d1b7f6a22}
-```
-
 ## Key Lessons
 
 This challenge demonstrated several common Linux privilege escalation patterns:
