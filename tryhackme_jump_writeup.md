@@ -2,7 +2,7 @@
 
 > **Spoiler warning:** This write-up contains the full exploitation chain and all flags for the TryHackMe `Jump` privilege escalation challenge.
 >
-> **Please note:** No flags codes are shown in this writeup.
+> **Please note:** No flags codes are shown in this write-up.
 
 ## Lab Summary
 
