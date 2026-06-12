@@ -2,7 +2,7 @@
 
 > **Spoiler warning:** This write-up contains the full exploitation chain and all flags for the TryHackMe `Jump` privilege escalation challenge.
 >
-> This was completed in a controlled TryHackMe lab environment using a Kali Linux VM connected to the TryHackMe VPN.
+> **Please note:** No flag codes are shown in this writeup.
 
 ## Lab Summary
 
