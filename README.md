@@ -89,6 +89,16 @@ The tools and methods listed in this repository are examples of approaches used 
 Writeups `MAY` contain spoilers, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
 Writeups `WILL NEVER` contain passwords, cracked or otherwise, no hashes or flags.
 
-## Author
+## Connect With Me
+
+Thanks for checking out my TryHackMe writeups. These notes are part of my ongoing cybersecurity learning journey, where I document rooms, techniques, tools, mistakes, and lessons learned as I work through different challenges.
+
+You can view my TryHackMe profile here:
+
+[TryHackMe Profile - V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)
+
+I am also active in cybersecurity learning communities, including Discord, where I discuss labs, tools, methodology, and general security topics with other learners and practitioners.
+
+Feel free to follow my progress, compare approaches, or reach out if you are working through similar rooms.
 
 Created by V4L1K4HN as part of my cybersecurity learning journey through TryHackMe.
