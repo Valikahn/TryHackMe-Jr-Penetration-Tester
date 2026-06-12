@@ -78,9 +78,13 @@ My general approach is:
 
 These writeups are for educational purposes only and are based on authorised TryHackMe lab environments.
 
-Do not use these techniques against systems that you do not own or do not have explicit permission to test.
+All tools, commands, techniques, and methodologies referenced in these writeups were used within controlled training environments where permission was provided by the owner and/or operator of the lab platform. The systems discussed are intentionally vulnerable machines designed for cybersecurity learning, practice, and assessment.
 
-## Spoiler Warning
+Do not use these techniques, tools, or methods against systems, networks, applications, or services that you do not own or do not have explicit written permission to test. Unauthorised access, scanning, exploitation, or disruption of systems is illegal and unethical.
+
+The tools and methods listed in this repository are examples of approaches used during specific rooms or learning exercises. They are not the only possible solutions, and other tools, techniques, or workflows may be used depending on the target environment, room design, and individual methodology.
+
+## Not Spoiler Warning
 
 Writeups `MAY` contain spoilers, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
 Writeups `WILL NEVER` contain passwords, cracked or otherwise, no hashes or flags.
