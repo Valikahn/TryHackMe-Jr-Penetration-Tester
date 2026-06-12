@@ -43,17 +43,16 @@ The tools used vary by room, but may include:
 - [Pspy](https://www.kali.org/tools/pspy/)
 - [John](https://www.kali.org/tools/john/)
 - [Hydra](https://www.kali.org/tools/hydra/)
-- ffuf
-- Feroxbuster
-- Impacket
-- Hashcat
-- NetExec / nxc
-- Evil-WinRM
-- BloodHound
-- Burp Suite
-- sudo enumeration
-- Linux manual enumeration
-- Standard Kali Linux tooling
+- [Ffuf](https://www.kali.org/tools/ffuf/)
+- [Feroxbuster](https://www.kali.org/tools/feroxbuster/)
+- [Impacket-Scripts](https://www.kali.org/tools/impacket-scripts/)
+- [Hashcat](https://www.kali.org/tools/hashcat/)
+- [NetExec / nxc](https://www.kali.org/tools/netexec/)
+- [Evil-WinRM](https://www.kali.org/tools/evil-winrm/)
+- [BloodHound](https://www.kali.org/tools/bloodhound/)
+- [Burpsuite](https://www.kali.org/tools/burpsuite/)
+- [sudo privilege enumeration](https://man7.org/linux/man-pages/man5/sudoers.5.html) / [GTFOBins](https://gtfobins.github.io/)
+- [Manual Linux privilege escalation enumeration](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
 
 ## Methodology
 
