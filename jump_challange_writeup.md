@@ -1,12 +1,13 @@
-# TryHackMe: Jump — Full Walkthrough
+# TryHackMe: Jump Challange - Full Walkthrough
 
-> **Spoiler warning:** This write-up contains the full exploitation chain and all flags for the TryHackMe `Jump` privilege escalation challenge.
-> 
+> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
+>
 > **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
 >
-> **No flag codes are shown in this write-up!**
-
 ## Lab Summary
+
+TryHackMe `Jump` privilege escalation challenge. 
+https://tryhackme.com/room/jump
 
 The objective of this challenge was to move through a chained privilege escalation path from an anonymous FTP entry point through several local users, ending with root access.
 
