@@ -35,6 +35,7 @@ Writeups may include:
 The tools used vary by room, but may include:
 
 - Nmap / Rustscan
+- [Nmap](https://nmap.org/) / [Rustscan](https://github.com/RustScan/RustScan)
 - FTP
 - SSH
 - Netcat
