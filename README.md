@@ -111,8 +111,10 @@ Created by V4L1K4HN as part of my cybersecurity learning journey through TryHack
 
 ## Licence
 
-Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+Unless otherwise stated, the original written content in this repository is licensed under the Creative Commons Attribution 4.0 International Licence.
 
-The GNU General Public License is a free, copyleft license for software and other kinds of works.
+You may share and adapt the original content for any purpose, provided that appropriate credit is given to V4L1K4HN, a link to the licence is included, and any changes are clearly indicated.
 
-Licence: [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+This licence applies only to content created by the repository author. TryHackMe room content, platform branding, screenshots, challenge descriptions, third-party tools, command output, software, trademarks, and other externally sourced material remain the property of their respective owners and may be subject to separate terms and licences.
+
+Code snippets and commands are provided for educational purposes within authorised cybersecurity training environments. No licence is granted for the unauthorised use of these materials against systems, networks, applications, or services.
