@@ -1,6 +1,7 @@
 # TryHackMe: Jump Challange - Full Walkthrough
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challange:** *Jump*
+
 Click [here](https://tryhackme.com/room/jump) to go to the Jump Chanllange!
 
 > **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
