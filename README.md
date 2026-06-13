@@ -117,9 +117,9 @@ Copyright © 2026 V4L1K4HN.
 
 You may share and adapt the licensed material for any purpose, including commercially, provided that:
 
-appropriate credit is given to V4L1K4HN;
-a link to the licence is provided; and
-any changes made to the original material are clearly indicated.
+- appropriate credit is given to V4L1K4HN;
+- a link to the licence is provided; and
+- any changes made to the original material are clearly indicated.
 
 This licence applies only to original material created by the repository author. TryHackMe content, branding, room materials, screenshots, third-party software, trademarks, command output, externally sourced material, and other third-party intellectual property remain subject to their respective owners' terms and licences.
 
