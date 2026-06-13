@@ -40,7 +40,7 @@ The main tools used were:
 - `ssh` for stable access as `monitor_user`.
 - Standard Linux enumeration commands such as `id`, `find`, `ls`, `cat`, `systemctl`, and `sudo -l`.
 
-Goto repository [README](https://github.com/Valikahn/TryHackMe-Writeups) under section `Tools Commonly Used` for links to tools used.
+Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used) to return to the repository README. Section `Tools Commonly Used` has all the links used and will be updated peredically with new tools if used or if links needs become 404.
 
 ## Initial Enumeration
 
