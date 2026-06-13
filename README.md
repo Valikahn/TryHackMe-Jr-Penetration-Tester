@@ -111,7 +111,7 @@ Created by V4L1K4HN as part of my cybersecurity learning journey through TryHack
 
 ## Licence
 
-Unless otherwise stated, the original written content in this repository is licensed under the Creative Commons Attribution 4.0 International Licence.
+Unless otherwise stated, the original written content in this repository is licensed under the [Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/legalcode.en).
 
 Copyright © 2026 V4L1K4HN.
 
@@ -121,6 +121,6 @@ You may share and adapt the licensed material for any purpose, including commerc
 - a link to the licence is provided; and
 - any changes made to the original material are clearly indicated.
 
-This licence applies only to original material created by the repository author. TryHackMe content, branding, room materials, screenshots, third-party software, trademarks, command output, externally sourced material, and other third-party intellectual property remain subject to their respective owners' terms and licences.
+This licence applies only to original material created by the repository author. TryHackMe content, branding, room materials, third-party software, trademarks, externally sourced material, and any other third-party intellectual property remain subject to their respective owners' terms and licences.
 
 See the [LICENSE](https://github.com/Valikahn/TryHackMe-Writeups/blob/main/LICENSE) file for the complete legal terms.
