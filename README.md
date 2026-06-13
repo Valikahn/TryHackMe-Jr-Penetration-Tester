@@ -111,8 +111,8 @@ Created by V4L1K4HN as part of my cybersecurity learning journey through TryHack
 
 ## Licence
 
-This repository is licensed under the Creative Commons Attribution 4.0 International Licence.
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
-You are free to share and adapt the material in this repository, provided appropriate credit is given.
+The GNU General Public License is a free, copyleft license for software and other kinds of works.
 
-Licence: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Licence: [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
