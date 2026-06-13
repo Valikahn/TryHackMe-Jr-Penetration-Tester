@@ -29,7 +29,7 @@ Writeups may include:
 **Pathway:** *Jr Penetration Tester*
 
 | Section | Challenge | Status |
-|---|---|---|---|
+|---|---|---|
 | Web Application Vulnerabilities I | Recruit | Work in Progress |
 | Web Application Vulnerabilities II | Support | Work in Progress |
 | Password Attacks | Checkmate | Work in Progress |
