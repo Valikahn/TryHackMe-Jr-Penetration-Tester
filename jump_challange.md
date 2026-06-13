@@ -11,8 +11,6 @@
 ## Lab Summary
 Check out the TryHackMe room now, click [here](https://tryhackme.com/room/jump) to go to this chanllange now!
 
-TryHackMe `Jump` privilege escalation challenge. 
-
 The objective of this challenge was to move through a chained privilege escalation path from an anonymous FTP entry point through several local users, ending with root access.
 
 Final compromise chain:
