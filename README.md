@@ -30,20 +30,20 @@ Writeups may include:
 
 | Section | Challenge | Status |
 |---|---|---|
-| Web Application Vulnerabilities I | Recruit | Work in Progress |
-| Web Application Vulnerabilities II | Support | Work in Progress |
-| Password Attacks | Checkmate | Work in Progress |
-| Privilege Escalation | Jump | Completed |
-| Privilege Escalation | Windows Jump | Work in Progress |
-| Active Directory Security Testing Basics | Proxy | Work in Progress |
-| Active Directory Security Testing Basics | Forward | Work in Progress |
-| Jr Pentester Challenges | Domino | Work in Progress |
-| Jr Pentester Challenges | Silent Monitor | Work in Progress |
-| Jr Pentester Challenges | Dead Drop | Work in Progress |
-| Jr Pentester Challenges | Operation Promotion | Work in Progress |
-| Jr Pentester Challenges | Operation Coldstart | Work in Progress |
-| Jr Pentester Challenges | Net Sec Challenge | Work in Progress |
-| Jr Pentester Challenges | Interceptor | Work in Progress |
+| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | Work in Progress |
+| Web Application Vulnerabilities II | [Support](https://tryhackme.com/room/support) | Work in Progress |
+| Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | Work in Progress |
+| Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | Completed |
+| Privilege Escalation | [Windows Jump](https://tryhackme.com/room/windowsjump) | Work in Progress |
+| Active Directory Security Testing Basics | [Proxy](https://tryhackme.com/room/proxychallenge) | Work in Progress |
+| Active Directory Security Testing Basics | [Forward](https://tryhackme.com/room/forwardchallenge) | Work in Progress |
+| Jr Pentester Challenges | [Domino](https://tryhackme.com/room/domino) | Work in Progress |
+| Jr Pentester Challenges | [Silent Monitor](https://tryhackme.com/room/silent-monitor) | Work in Progress |
+| Jr Pentester Challenges | [Dead Drop](https://tryhackme.com/room/dead-drop) | Work in Progress |
+| Jr Pentester Challenges | [Operation Promotion](https://tryhackme.com/room/operationpromotion) | Work in Progress |
+| Jr Pentester Challenges | [Operation Coldstart](https://tryhackme.com/room/operationcoldstart) | Work in Progress |
+| Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | Work in Progress |
+| Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | Work in Progress |
 
 ## Tools Commonly Used
 
