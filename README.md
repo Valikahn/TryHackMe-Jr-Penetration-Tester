@@ -1,4 +1,4 @@
-# TryHackMe Writeups
+# TryHackMe - Jr Penetration Tester Writeups
 
 This repository contains my personal [TryHackMe](https://tryhackme.com/) writeups, notes, and walkthroughs from completed rooms and learning paths.
 
