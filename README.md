@@ -123,4 +123,4 @@ You may share and adapt the licensed material for any purpose, including commerc
 
 This licence applies only to original material created by the repository author. TryHackMe content, branding, room materials, screenshots, third-party software, trademarks, command output, externally sourced material, and other third-party intellectual property remain subject to their respective owners' terms and licences.
 
-See the LICENSE file for the complete legal terms.
+See the [LICENSE](https://github.com/Valikahn/TryHackMe-Writeups/blob/main/LICENSE) file for the complete legal terms.
