@@ -26,7 +26,7 @@ Writeups may include:
 
 ## Completed Writeups
 
-**Pathway:** *Jr Penetration Tester*
+**Pathway:** [*Jr Penetration Tester*](https://tryhackme.com/path/outline/jrpenetrationtester)
 
 | Section | Challenge | Status |
 |---|---|---|
