@@ -40,6 +40,8 @@ The main tools used were:
 - `ssh` for stable access as `monitor_user`.
 - Standard Linux enumeration commands such as `id`, `find`, `ls`, `cat`, `systemctl`, and `sudo -l`.
 
+Goto repository [README](https://github.com/Valikahn/TryHackMe-Writeups) under section `Tools Commonly Used` for links to tools used.
+
 ## Initial Enumeration
 
 The first step was to identify open services on the target.
