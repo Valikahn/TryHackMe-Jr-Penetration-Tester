@@ -26,9 +26,22 @@ Writeups may include:
 
 ## Completed Writeups
 
-| Room | Path | Status |
-|---|---|---|
-| Jump | Jr Penetration Tester / Privilege Escalation | Completed |
+| Pathway | Section | Challenge | Status |
+|---|---|---|---|
+| Jr Penetration Tester | Web Application Vulnerabilities I | Recruit | Work in Progress |
+| Jr Penetration Tester | Web Application Vulnerabilities II | Support | Work in Progress |
+| Jr Penetration Tester | Password Attacks | Checkmate | Work in Progress |
+| Jr Penetration Tester | Privilege Escalation | Jump | Completed |
+| Jr Penetration Tester | Privilege Escalation | Windows Jump | Work in Progress |
+| Jr Penetration Tester | Active Directory Security Testing Basics | Proxy | Work in Progress |
+| Jr Penetration Tester | Active Directory Security Testing Basics | Forward | Work in Progress |
+| Jr Penetration Tester | Jr Pentester Challenges | Domino | Work in Progress |
+| Jr Penetration Tester | Jr Pentester Challenges | Silent Monitor | Work in Progress |
+| Jr Penetration Tester | Jr Pentester Challenges | Dead Drop | Work in Progress |
+| Jr Penetration Tester | Jr Pentester Challenges | Operation Promotion | Work in Progress |
+| Jr Penetration Tester | Jr Pentester Challenges | Operation Coldstart | Work in Progress |
+| Jr Penetration Tester | Jr Pentester Challenges | Net Sec Challenge | Work in Progress |
+| Jr Penetration Tester | Jr Pentester Challenges | Interceptor | Work in Progress |
 
 ## Tools Commonly Used
 
