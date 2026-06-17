@@ -47,9 +47,9 @@ Writeups may include:
 
 **Other Challenges**
 
-| Section | Challenge | Task | Status |
+| Section | Challenge | Status |
 |---|---|---|---|
-| [Metasploit: Payload Generation](https://tryhackme.com/room/metasploitpayloadgeneration) | Capstone Challenge | Task 8 | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/metasploit_capstone_challenge.md) |
+| [Metasploit: Payload Generation](https://tryhackme.com/room/metasploitpayloadgeneration) | Capstone Challenge | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/metasploit_capstone_challenge.md) |
 
 ## Tools Commonly Used
 
