@@ -19,8 +19,8 @@ Writeups may include:
 - Enumeration steps
 - Initial access
 - Privilege escalation path
-- Flags recovered
-- Key findings
+- Flags recovered <REDACTED>
+- Key findings <REDACTED>
 - Lessons learned
 - Remediation notes
 
