@@ -470,24 +470,6 @@ The weaknesses represented in this lab could be mitigated by:
 
 The primary design failure was not simply that a share was writable. The critical issue was that attacker-controlled executable content placed in that share was subsequently processed by a privileged automated task.
 
-## Final Result
-
-The capstone was completed successfully.
-
-The assessment demonstrated the complete workflow:
-
-```text
-enumerate SMB
-→ generate payload
-→ upload executable
-→ configure handler
-→ receive Meterpreter
-→ extract NTLM hash
-→ locate flag
-```
-
-The final answers were obtained but have been redacted from this public write-up.
-
 ## Disclaimer
 
 This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
