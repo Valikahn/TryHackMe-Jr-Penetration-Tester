@@ -1,6 +1,6 @@
 # TryHackMe: Metasploit - Capstone Challenge
 
-**Pathway:** *Metasploit* | **Room:** *Metasploit - Payload Generation* | **Task:** *Capstone*
+**Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Task:** *Task 8 Capstone Challenge*
 
 Click [here](https://tryhackme.com/room/metasploitpayloadgeneration) to go to this room now!
 
