@@ -118,15 +118,19 @@ Writeups `WILL NEVER` contain passwords, cracked or otherwise, no hashes or flag
 
 ## Connect With Me
 
-Thanks for checking out my TryHackMe writeups. These notes are part of my ongoing cybersecurity learning journey, where I document rooms, techniques, tools, mistakes, and lessons learned as I work through different challenges.
+Thanks for checking out my TryHackMe write-ups. These notes form part of my ongoing cybersecurity learning journey, where I document rooms, techniques, tools, mistakes and lessons learned while working through different challenges.
 
 You can view my TryHackMe profile here:
 
 [TryHackMe Profile - V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)
 
-I am also active in cybersecurity learning communities, including Discord, where I discuss labs, tools, methodology, and general security topics with other learners and practitioners.
+I am also active within cybersecurity learning communities, including Discord, where I discuss labs, tools, methodologies and general security topics with other learners and practitioners.
 
-Feel free to follow my progress, compare approaches, or reach out if you are working through similar rooms.
+Feel free to follow my progress, compare approaches or get in touch if you are working through similar rooms.
+
+If there is a particular TryHackMe room or challenge that you would like to see covered in a future walkthrough, feel free to send me a request. You can reach me on Discord through the details provided on my TryHackMe profile or submit a request using the Discussions tab on this GitHub repository.
+
+Walkthrough requests are always welcome, although publication will depend on room availability, completion and whether sharing the content complies with the platform's rules.
 
 Created by V4L1K4HN as part of my cybersecurity learning journey through TryHackMe.
 
