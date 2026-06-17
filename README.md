@@ -49,7 +49,7 @@ Writeups may include:
 
 | Section | Challenge | Task | Status |
 |---|---|---|---|
-| [Metasploit: Payload Generation](https://tryhackme.com/room/metasploitpayloadgeneration) | Capstone Challenge | Task 8 | Work in Progress |
+| [Metasploit: Payload Generation](https://tryhackme.com/room/metasploitpayloadgeneration) | Capstone Challenge | Task 8 | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/metasploit_capstone_challenge.md) |
 
 ## Tools Commonly Used
 
