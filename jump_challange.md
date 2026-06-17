@@ -1,4 +1,4 @@
-# TryHackMe: Jump Challange - Full Walkthrough
+# TryHackMe: Jump Challange
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challange:** *Jump*
 
