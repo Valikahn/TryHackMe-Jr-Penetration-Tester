@@ -45,6 +45,11 @@ Writeups may include:
 | Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | Work in Progress |
 | Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | Work in Progress |
 
+**Extras**
+
+| Section | Challenge | Task | Status |
+| Metasploit: Payload Generation | Capstone Challenge | Task 8 | Work in Progress |
+
 ## Tools Commonly Used
 
 The tools used vary by room, but may include:
