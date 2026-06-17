@@ -33,7 +33,7 @@ Writeups may include:
 | Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | Work in Progress |
 | Web Application Vulnerabilities II | [Support](https://tryhackme.com/room/support) | Work in Progress |
 | Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | Work in Progress |
-| Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | Completed |
+| Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/jump_challange.md) |
 | Privilege Escalation | [Windows Jump](https://tryhackme.com/room/windowsjump) | Work in Progress |
 | Active Directory Security Testing Basics | [Proxy](https://tryhackme.com/room/proxychallenge) | Work in Progress |
 | Active Directory Security Testing Basics | [Forward](https://tryhackme.com/room/forwardchallenge) | Work in Progress |
