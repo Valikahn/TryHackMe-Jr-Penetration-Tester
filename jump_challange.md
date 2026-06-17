@@ -9,7 +9,7 @@ Click [here](https://tryhackme.com/room/jump) to go to this chanllange now!
 > **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
 >
 > **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
-> 
+
 ## Lab Summary
 
 The objective of this challenge was to move through a chained privilege escalation path from an anonymous FTP entry point through several local users, ending with root access.
