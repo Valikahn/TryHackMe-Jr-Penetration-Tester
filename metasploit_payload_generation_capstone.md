@@ -1,4 +1,4 @@
-# TryHackMe: Metasploit - Payload Generation Capstone - Full Walkthrough
+# TryHackMe: Metasploit - Payload Generation Capstone
 
 Pathway: Metasploit | Room: Metasploit - Payload Generation | Task: Capstone
 
