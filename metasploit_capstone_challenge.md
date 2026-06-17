@@ -6,8 +6,8 @@ Click [here](https://tryhackme.com/room/metasploitpayloadgeneration) to go to th
 
 > **Spoiler warning:** This write-up contains the full exploitation chain; however, the final NTLM hash and flag value are not shown.
 >
-> **Lab environment:** The IP addresses, tools, commands and techniques shown in this write-up were used only within an authorised TryHackMe lab. The target machine was provided and operated by TryHackMe, and permission was granted to test it as part of the room.
->
+> **Lab environment:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+> 
 > **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
 
 ## Lab Summary
