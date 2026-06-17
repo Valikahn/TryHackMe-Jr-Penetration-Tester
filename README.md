@@ -48,6 +48,7 @@ Writeups may include:
 **Extras**
 
 | Section | Challenge | Task | Status |
+|---|---|---|---|
 | Metasploit: Payload Generation | Capstone Challenge | Task 8 | Work in Progress |
 
 ## Tools Commonly Used
