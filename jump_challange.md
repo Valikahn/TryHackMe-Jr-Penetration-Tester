@@ -567,10 +567,12 @@ The vulnerabilities in this lab could be mitigated by:
 - Avoiding `NOPASSWD` rules unless they are strictly necessary and carefully constrained.
 - Using `NOEXEC` sudo options where appropriate for pager/editor-style binaries.
 
-## Final Result
+## Disclaimer
 
-The challenge was completed successfully with root access.
+This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
 
-```text
-anonymous → recon_user → dev_user → monitor_user → ops_user → root
-```
+All tools, commands, payloads and post-exploitation techniques described here were used within a controlled environment provided by TryHackMe. Permission to interact with the target was granted by the platform owner and operator as part of the room.
+
+The tools and methods documented in this walkthrough represent one successful approach. They are not the only possible techniques, and alternative tools or workflows may produce the same result.
+
+Never test, scan, exploit or access a system without clear and explicit authorisation from its owner.
