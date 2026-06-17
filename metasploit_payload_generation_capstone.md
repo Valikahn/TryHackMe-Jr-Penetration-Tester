@@ -1,6 +1,6 @@
 # TryHackMe: Metasploit - Payload Generation Capstone
 
-Pathway: Metasploit | Room: Metasploit - Payload Generation | Task: Capstone
+**Pathway:** *Metasploit* | **Room:** *Metasploit - Payload Generation* | **Task:** *Capstone*
 
 Click [here](https://tryhackme.com/room/metasploitpayloadgeneration) to go to this room now!
 
