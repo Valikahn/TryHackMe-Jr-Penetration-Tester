@@ -479,11 +479,3 @@ All tools, commands, payloads and post-exploitation techniques described here we
 The tools and methods documented in this walkthrough represent one successful approach. They are not the only possible techniques, and alternative tools or workflows may produce the same result.
 
 Never test, scan, exploit or access a system without clear and explicit authorisation from its owner.
-
-## About Me
-
-You can find my TryHackMe profile here:
-
-[https://tryhackme.com/p/V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)
-
-I also share notes, write-ups and progress through GitHub and the wider cybersecurity community. You may also find me lurking on Discord, probably staring at a terminal and wondering why the command worked perfectly five minutes ago.
