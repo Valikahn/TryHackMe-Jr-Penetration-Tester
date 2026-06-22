@@ -1,3 +1,5 @@
+![Alt text](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/v4l1k4hn.png?raw=true)
+
 # TryHackMe - Jr Penetration Tester Writeups
 
 This repository contains my personal [TryHackMe](https://tryhackme.com/) writeups, notes, and walkthroughs from completed rooms and learning paths.
