@@ -117,7 +117,7 @@ The tools and methods listed in this repository are examples of approaches used 
 
 ## Not Spoiler Warning
 
-Writeups `MAY` contain spoilers, privilege escalation paths, and command output. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
+Writeups `MAY` contain spoilers, privilege escalation paths, and command output, sometimes this will be deliberate but other times this will be by mistake, if this is the case please let me know in the Discussions. If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
 Writeups `WILL NEVER` contain passwords, cracked or otherwise, no hashes or flags.
 
 ## Connect With Me
