@@ -239,7 +239,7 @@ Repetition is particularly valuable for:
 
 Learners should also avoid becoming overly focused on league points or room completion statistics. Progress on a leader board does not necessarily represent technical understanding. It is better to complete fewer rooms properly or more frequently, than to move quickly through content without retaining the methodology.
 
-### Testing Environment
+### Testing Environment  
 Candidates should also organise their testing environment before beginning the examination.
 
 Useful preparation includes:
@@ -271,17 +271,17 @@ PT1/
 
 The examination should not be approached as a 48-hour continuous sprint, take strategic breaks as often as you feel the need to, even if its to clear you head, this can make it easier to recognise information that was previously overlooked.
 
-### Learning Paths
+### Learning Paths  
 Knowing what I know now and how challenging the Web Application Pentest section was, before sitting PT1, I would make two significant changes to my preparation. 
 
 1. [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
 2. [Web Application Pentesting](https://tryhackme.com/path/outline/webapppentesting)
 
-### Cheat sheet
+### Cheat sheet  
 [LaGarian Smith Repository - OSCP Cheat Sheet](https://gitlab.com/lagarian.smith/oscp-cheat-sheet/-/blob/master/OSCP_Notes.md)  
 I found this OSCP cheat sheet to be a useful one-stop reference for common penetration testing commands, enumeration techniques and attack methodology. 
 
-### TryHackMe Rooms
+### TryHackMe Rooms  
 These TryHackMe rooms are a good starting point for getting a feel for the different skills used throughout penetration testing. They provide practical exposure to areas such as privilege escalation, enumeration, web application security, port scanning, Active Directory and pivoting.
 
 These rooms are not a replacement for completing the full learning paths, but they are a useful way to build confidence, revisit weaker areas and gain more hands-on experience before attempting PT1.
