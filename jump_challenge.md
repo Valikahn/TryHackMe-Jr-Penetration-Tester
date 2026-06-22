@@ -1,4 +1,4 @@
-# TryHackMe: Jump Challenge
+# Jump Challenge
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *Jump*
 
