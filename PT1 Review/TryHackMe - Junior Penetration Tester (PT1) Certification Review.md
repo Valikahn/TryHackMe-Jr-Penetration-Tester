@@ -278,7 +278,7 @@ Knowing what I know now and how challenging the Web Application Pentest section 
 2. [Web Application Pentesting](https://tryhackme.com/path/outline/webapppentesting)
 
 ### Cheat sheet
-[LaGarian Smith Repository - OSCP Cheat Sheet](https://gitlab.com/lagarian.smith/oscp-cheat-sheet/-/blob/master/OSCP_Notes.md)
+[LaGarian Smith Repository - OSCP Cheat Sheet](https://gitlab.com/lagarian.smith/oscp-cheat-sheet/-/blob/master/OSCP_Notes.md)  
 I found this OSCP cheat sheet to be a useful one-stop reference for common penetration testing commands, enumeration techniques and attack methodology. 
 
 ### TryHackMe Rooms
