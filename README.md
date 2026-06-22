@@ -77,6 +77,8 @@ The tools used vary by room, but may include:
 - [Evilginx2](https://www.kali.org/tools/evilginx2/)
 - [Responder](https://www.kali.org/tools/responder/)
 - [PowerShell](https://www.kali.org/tools/powershell/)
+- [Dig](https://www.kali.org/tools/bind9/#dig)
+- [Gobuster](https://www.kali.org/tools/gobuster/)
 - [Scapy](https://www.kali.org/tools/scapy/)
 - [Enum4linux](https://www.kali.org/tools/enum4linux/)
 - [Kerberoasting](https://github.com/nidem/kerberoast)
