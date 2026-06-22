@@ -1,5 +1,5 @@
 # TryHackMe - Junior Penetration Tester (PT1) Certification Review
-![Alt text](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/v4l1k4hn.png?raw=true)
+![Alt text](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/jrpt_exam_review.png?raw=true)
 ## Introduction
 The [TryHackMe](http://www.tryhackme.com) [Junior Penetration Tester certification](https://tryhackme.com/certification/junior-penetration-tester), commonly referred to as PT1, is a practical certification intended to assess the core abilities required of an aspiring penetration tester. Unlike a conventional multiple-choice examination, PT1 requires candidates to complete a structured penetration test across several connected technical areas and produce professional reports explaining their findings.
 
