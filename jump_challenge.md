@@ -1,6 +1,6 @@
 # TryHackMe: Jump Challenge
 
-**Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challange:** *Jump*
+**Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *Jump*
 
 Click [here](https://tryhackme.com/room/jump) to go to this chanllange now!
 
