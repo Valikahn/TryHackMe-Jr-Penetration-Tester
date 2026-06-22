@@ -10,6 +10,8 @@ Each writeup is written from the perspective of a controlled lab environment. Th
 
 The IP addresses shown in these writeups were allocated during the TryHackMe labs, with the attack performed either from the TryHackMe AttackBox or from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN, including the Paris VPN server where noted.
 
+**PLEASE NOTE:** This repository will **NOT** contain anything from the Jr Penetration Tester (PT1) certification! If you are looking for any assistance, answers, guides, walkthroughs you will **NOT** find any of those here.
+
 ## Repository Structure
 
 Writeups may include:
