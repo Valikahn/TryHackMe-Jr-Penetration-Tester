@@ -58,7 +58,6 @@ Now, I passed PT1 on my first attempt, although I was quite nervous when submitt
 
 More importantly, it revealed both my strengths and the areas where further study is required.
 
----
 ## Exam Breakdown
 The PT1 examination is completed within a 48-hour window. The assessment is presented as a complete penetration testing engagement rather than a collection of unrelated capture-the-flag challenges.
 
@@ -93,7 +92,6 @@ The assessment rewards persistence and methodical testing and there were several
 
 In penetration testing, finding one vulnerability does not necessarily mean that the assessment of that system is complete.
 
----
 ## Web Application Security
 ###### Difficulty 8/10
 Web application security was the most difficult part of the examination for me. This reflected my experience during the learning path, where Burp Suite was the tool I found most challenging to learn.
@@ -152,7 +150,6 @@ Effective testing requires an understanding of:
 
 Some of the most important weaknesses may appear within normal business processes rather than through an obvious technical error. Although I found this section difficult, it was also one of the most useful parts of the examination because it clearly identified the area where I need the most development.
 
----
 ## Network Security
 ###### Difficulty 5/10
 Network security was an area where I felt considerably more confident. The learning path helped me develop a more structured approach to reconnaissance, service enumeration, vulnerability research, exploitation, shell management and privilege escalation.
@@ -176,7 +173,6 @@ The most important improvement was learning not to rely on a single scan or resu
 
 Overall, this section strengthened my ability to move from initial reconnaissance to a more complete understanding of the target environment.
 
----
 ## Active Directory
 ###### Difficulty 3/10
 Active Directory was the examination area I found easiest, largely because I already had a strong professional background in this area. I work as an Active Directory Subject Matter Expert and have more than 15 years of experience in the AD space, so I approached this section with considerably more confidence than the others.
@@ -215,7 +211,6 @@ This section also reinforced the importance of recording every username, passwor
 
 Overall, Active Directory felt more logical once I began treating it as a series of relationships and attack paths rather than isolated findings. That shift in mindset made the section much easier to approach.
 
----
 ## Preparation Strategy
 My main preparation consisted of completing the Jr Penetration Tester learning path. The path took me approximately 96 hours and introduced a large percentage of the subject matter for the first time. My strongest recommendation is to take detailed notes.
 
@@ -243,6 +238,7 @@ Repetition is particularly valuable for:
 - Shell management    
 
 Learners should also avoid becoming overly focused on league points or room completion statistics. Progress on a leader board does not necessarily represent technical understanding. It is better to complete fewer rooms properly or more frequently, than to move quickly through content without retaining the methodology.
+
 ### Testing Environment
 Candidates should also organise their testing environment before beginning the examination.
 
@@ -274,6 +270,7 @@ PT1/
 ```
 
 The examination should not be approached as a 48-hour continuous sprint, take strategic breaks as often as you feel the need to, even if its to clear you head, this can make it easier to recognise information that was previously overlooked.
+
 ### Learning Paths
 Knowing what I know now and how challenging the Web Application Pentest section was, before sitting PT1, I would make two significant changes to my preparation. 
 
@@ -297,8 +294,6 @@ These rooms are not a replacement for completing the full learning paths, but th
 | [Watcher](https://tryhackme.com/room/watcher)                                  | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04)                              |
 | [JWT Security](https://tryhackme.com/room/jwtsecurity)                         | [Lateral Movement and Pivoting](https://tryhackme.com/room/lateralmovementandpivoting) |
 
----
-
 ## Final Thoughts and Next Steps
 I would absolutely recommend both the Jr Penetration Tester learning path and the PT1 certification. The pathway provides a broad introduction to the major areas of penetration testing, while the examination requires candidates to apply those skills under pressure.
 
@@ -320,5 +315,3 @@ My main advice to future candidates is to take extensive notes, repeat difficult
 Offensive and defensive security require different mindsets, and it is useful to experience both before deciding where to specialise. The certification has also given me a clearer direction for further development.
 
 Passing PT1 was an important milestone, but it is not the end of the learning process. Penetration testing is a field in which tools, vulnerabilities and defensive technologies continually develop. The most valuable outcome of the journey has therefore been the creation of a stronger methodology and the confidence to approach unfamiliar technical problems independently.
-
----
