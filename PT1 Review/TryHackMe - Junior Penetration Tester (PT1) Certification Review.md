@@ -15,8 +15,6 @@ It tested far more than my ability to remember commands. It required patience, a
 
 I have added a **Difficulty Scale:** 0/10 rating beside each of the main topics. This is based entirely on my own experience, with 1 meaning easy and 10 meaning extremely difficult. These scores reflect my own experience and should be treated as a personal guide rather than a fixed measure of difficulty. Other learners may find the same topics easier or harder depending on their existing knowledge, practical experience, confidence with the tools and the amount of preparation completed beforehand.
 
----
-
 ## My Experience with PT1 Certification
 The PT1 examination was tough. Some parts felt relatively straightforward, others were genuinely difficult, and then there were moments where I found myself wondering, “What the hell am I doing wrong?” It placed me under real pressure and repeatedly challenged my assumptions. One of the main lessons I learnt was that apparent progress can be misleading.
 
