@@ -16,6 +16,7 @@ It tested far more than my ability to remember commands. It required patience, a
 I have added a **Difficulty Scale:** 0/10 rating beside each of the main topics. This is based entirely on my own experience, with 1 meaning easy and 10 meaning extremely difficult. These scores reflect my own experience and should be treated as a personal guide rather than a fixed measure of difficulty. Other learners may find the same topics easier or harder depending on their existing knowledge, practical experience, confidence with the tools and the amount of preparation completed beforehand.
 
 ---
+
 ## My Experience with PT1 Certification
 The PT1 examination was tough. Some parts felt relatively straightforward, others were genuinely difficult, and then there were moments where I found myself wondering, “What the hell am I doing wrong?” It placed me under real pressure and repeatedly challenged my assumptions. One of the main lessons I learnt was that apparent progress can be misleading.
 
@@ -280,9 +281,11 @@ Knowing what I know now and how challenging the Web Application Pentest section 
 
 1. [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
 2. [Web Application Pentesting](https://tryhackme.com/path/outline/webapppentesting)
+
 ### Cheat sheet
 [LaGarian Smith Repository - OSCP Cheat Sheet](https://gitlab.com/lagarian.smith/oscp-cheat-sheet/-/blob/master/OSCP_Notes.md)
 I found this OSCP cheat sheet to be a useful one-stop reference for common penetration testing commands, enumeration techniques and attack methodology. 
+
 ### TryHackMe Rooms
 These TryHackMe rooms are a good starting point for getting a feel for the different skills used throughout penetration testing. They provide practical exposure to areas such as privilege escalation, enumeration, web application security, port scanning, Active Directory and pivoting.
 
@@ -297,6 +300,7 @@ These rooms are not a replacement for completing the full learning paths, but th
 | [JWT Security](https://tryhackme.com/room/jwtsecurity)                         | [Lateral Movement and Pivoting](https://tryhackme.com/room/lateralmovementandpivoting) |
 
 ---
+
 ## Final Thoughts and Next Steps
 I would absolutely recommend both the Jr Penetration Tester learning path and the PT1 certification. The pathway provides a broad introduction to the major areas of penetration testing, while the examination requires candidates to apply those skills under pressure.
 
