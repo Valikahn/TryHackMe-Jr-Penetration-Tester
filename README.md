@@ -59,39 +59,66 @@ Writeups may include:
 
 The tools used vary by room, but may include:
 
-- [Nmap](https://nmap.org/) / [Rustscan](https://github.com/RustScan/RustScan)
-- [vsFTP](https://security.appspot.com/vsftpd.html)
-- [SSH / OpenSSH](https://www.kali.org/tools/openssh/)
-- [Netcat / nc](https://www.kali.org/tools/netcat/)
-- [Penelope](https://www.kali.org/tools/penelope)
-- [Peass-ng](https://www.kali.org/tools/peass-ng/)
-- [Pspy](https://www.kali.org/tools/pspy/)
-- [John](https://www.kali.org/tools/john/)
-- [Hydra](https://www.kali.org/tools/hydra/)
-- [Ffuf](https://www.kali.org/tools/ffuf/)
-- [Feroxbuster](https://www.kali.org/tools/feroxbuster/)
-- [Impacket-Scripts](https://www.kali.org/tools/impacket-scripts/)
-- [Hashcat](https://www.kali.org/tools/hashcat/)
-- [NetExec / nxc](https://www.kali.org/tools/netexec/)
-- [Evil-WinRM](https://www.kali.org/tools/evil-winrm/)
-- [Evilginx2](https://www.kali.org/tools/evilginx2/)
-- [Responder](https://www.kali.org/tools/responder/)
-- [PowerShell](https://www.kali.org/tools/powershell/)
-- [Dig](https://www.kali.org/tools/bind9/#dig)
-- [Gobuster](https://www.kali.org/tools/gobuster/)
-- [Scapy](https://www.kali.org/tools/scapy/)
-- [Enum4linux](https://www.kali.org/tools/enum4linux/)
-- [Kerberoasting](https://github.com/nidem/kerberoast)
-- [CeWL](https://www.kali.org/tools/cewl/)
-- [BloodHound](https://www.kali.org/tools/bloodhound/)
-- [Burpsuite](https://www.kali.org/tools/burpsuite/)
-- [Metasploit Framework](https://www.kali.org/tools/metasploit-framework/)
-- [Sshuttle](https://www.kali.org/tools/sshuttle/)
-- [Rpivot](https://github.com/klsecservices/rpivot)
-- [Zaproxy](https://www.kali.org/tools/zaproxy/)
-- [Chisel](https://www.kali.org/tools/chisel/)
-- [sudo privilege enumeration](https://man7.org/linux/man-pages/man5/sudoers.5.html) / [GTFOBins](https://gtfobins.github.io/)
-- [Manual Linux privilege escalation enumeration](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
+| Kali Linux Tools                                                               | Kali Linux Tools                                                                       |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| [Nmap](https://nmap.org/) | [Rustscan](https://github.com/RustScan/RustScan)      |
+| [vsFTP](https://security.appspot.com/vsftpd.html) | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration)               |
+| [RootMe](https://tryhackme.com/room/rrootme)                                   | [Interceptor](https://tryhackme.com/room/interceptor)                                  |
+| [Watcher](https://tryhackme.com/room/watcher)                                  | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04)                              |
+| [JWT Security](https://tryhackme.com/room/jwtsecurity)                         | [Lateral Movement and Pivoting](https://tryhackme.com/room/lateralmovementandpivoting) |
+| [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)               | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration)               |
+| [RootMe](https://tryhackme.com/room/rrootme)                                   | [Interceptor](https://tryhackme.com/room/interceptor)                                  |
+| [Watcher](https://tryhackme.com/room/watcher)                                  | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04)                              |
+| [JWT Security](https://tryhackme.com/room/jwtsecurity)                         | [Lateral Movement and Pivoting](https://tryhackme.com/room/lateralmovementandpivoting) |
+| [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)               | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration)               |
+| [RootMe](https://tryhackme.com/room/rrootme)                                   | [Interceptor](https://tryhackme.com/room/interceptor)                                  |
+| [Watcher](https://tryhackme.com/room/watcher)                                  | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04)                              |
+| [JWT Security](https://tryhackme.com/room/jwtsecurity)                         | [Lateral Movement and Pivoting](https://tryhackme.com/room/lateralmovementandpivoting) |
+| [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)               | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration)               |
+| [RootMe](https://tryhackme.com/room/rrootme)                                   | [Interceptor](https://tryhackme.com/room/interceptor)                                  |
+| [Watcher](https://tryhackme.com/room/watcher)                                  | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04)                              |
+| [JWT Security](https://tryhackme.com/room/jwtsecurity)                         | [Lateral Movement and Pivoting](https://tryhackme.com/room/lateralmovementandpivoting) |
+| [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)               | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration)               |
+| [RootMe](https://tryhackme.com/room/rrootme)                                   | [Interceptor](https://tryhackme.com/room/interceptor)                                  |
+| [Watcher](https://tryhackme.com/room/watcher)                                  | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04)                              |
+| [JWT Security](https://tryhackme.com/room/jwtsecurity)                         | [Lateral Movement and Pivoting](https://tryhackme.com/room/lateralmovementandpivoting) |
+
+
+
+
+
+[SSH / OpenSSH](https://www.kali.org/tools/openssh/)
+[Netcat / nc](https://www.kali.org/tools/netcat/)
+[Penelope](https://www.kali.org/tools/penelope)
+[Peass-ng](https://www.kali.org/tools/peass-ng/)
+[Pspy](https://www.kali.org/tools/pspy/)
+[John](https://www.kali.org/tools/john/)
+[Hydra](https://www.kali.org/tools/hydra/)
+[Ffuf](https://www.kali.org/tools/ffuf/)
+[Feroxbuster](https://www.kali.org/tools/feroxbuster/)
+[Impacket-Scripts](https://www.kali.org/tools/impacket-scripts/)
+[Hashcat](https://www.kali.org/tools/hashcat/)
+[NetExec / nxc](https://www.kali.org/tools/netexec/)
+[Evil-WinRM](https://www.kali.org/tools/evil-winrm/)
+[Evilginx2](https://www.kali.org/tools/evilginx2/)
+[Responder](https://www.kali.org/tools/responder/)
+[PowerShell](https://www.kali.org/tools/powershell/)
+[Dig](https://www.kali.org/tools/bind9/#dig)
+[Gobuster](https://www.kali.org/tools/gobuster/)
+[Scapy](https://www.kali.org/tools/scapy/)
+[Enum4linux](https://www.kali.org/tools/enum4linux/)
+[Kerberoasting](https://github.com/nidem/kerberoast)
+[CeWL](https://www.kali.org/tools/cewl/)
+[BloodHound](https://www.kali.org/tools/bloodhound/)
+[Burpsuite](https://www.kali.org/tools/burpsuite/)
+[Metasploit Framework](https://www.kali.org/tools/metasploit-framework/)
+[Sshuttle](https://www.kali.org/tools/sshuttle/)
+[Rpivot](https://github.com/klsecservices/rpivot)
+[Zaproxy](https://www.kali.org/tools/zaproxy/)
+[Chisel](https://www.kali.org/tools/chisel/)
+
+[sudo privilege enumeration](https://man7.org/linux/man-pages/man5/sudoers.5.html) / [GTFOBins](https://gtfobins.github.io/)
+[Manual Linux privilege escalation enumeration](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
 
 ## Methodology
 
