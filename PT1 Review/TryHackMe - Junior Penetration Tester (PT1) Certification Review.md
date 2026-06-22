@@ -93,7 +93,7 @@ The assessment rewards persistence and methodical testing and there were several
 In penetration testing, finding one vulnerability does not necessarily mean that the assessment of that system is complete.
 
 ## Web Application Security
-###### Difficulty 8/10
+#### Difficulty 8/10
 Web application security was the most difficult part of the examination for me. This reflected my experience during the learning path, where Burp Suite was the tool I found most challenging to learn.
 
 Burp Suite is extremely capable, but its interface and range of features can initially feel convoluted and at times overwhelming. Understanding how Proxy, Repeater, Intruder and the other modules support different stages of web application testing requires repeated use.
@@ -151,7 +151,7 @@ Effective testing requires an understanding of:
 Some of the most important weaknesses may appear within normal business processes rather than through an obvious technical error. Although I found this section difficult, it was also one of the most useful parts of the examination because it clearly identified the area where I need the most development.
 
 ## Network Security
-###### Difficulty 5/10
+#### Difficulty 5/10
 Network security was an area where I felt considerably more confident. The learning path helped me develop a more structured approach to reconnaissance, service enumeration, vulnerability research, exploitation, shell management and privilege escalation.
 
 The main lesson was that good network testing depends on understanding what each exposed service is telling you. An open port is only the starting point. The real value comes from identifying the service, checking how it is configured, reviewing the available information and deciding what should be investigated next.
@@ -174,7 +174,7 @@ The most important improvement was learning not to rely on a single scan or resu
 Overall, this section strengthened my ability to move from initial reconnaissance to a more complete understanding of the target environment.
 
 ## Active Directory
-###### Difficulty 3/10
+#### Difficulty 3/10
 Active Directory was the examination area I found easiest, largely because I already had a strong professional background in this area. I work as an Active Directory Subject Matter Expert and have more than 15 years of experience in the AD space, so I approached this section with considerably more confidence than the others.
 
 That said, knowing Active Directory from an administrative and operational perspective is very different from knowing how to assess it during a penetration test. I understood the platform, its structure and its common behaviours, but I still had to learn the tools, attack paths/vectors and methodology used to test it from an offensive security perspective. Because of that, this section was still a significant learning curve for me, despite my existing experience.
