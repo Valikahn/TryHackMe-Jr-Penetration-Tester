@@ -1,4 +1,4 @@
-# TryHackMe: Metasploit - Capstone Challenge
+# Capstone Challenge
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *Capstone Challenge*
 
