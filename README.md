@@ -59,6 +59,8 @@ Writeups may include:
 
 The tools used vary by room, but may include:
 
+| A | B | C | D |
+| --- | --- | --- | --- |
 | [Nmap](https://nmap.org/) | [Rustscan](https://github.com/RustScan/RustScan) | [Zaproxy](https://www.kali.org/tools/zaproxy/) | [Chisel](https://www.kali.org/tools/chisel/) |
 | [vsFTP](https://security.appspot.com/vsftpd.html) | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration) | [Sshuttle](https://www.kali.org/tools/sshuttle/) | [Rpivot](https://github.com/klsecservices/rpivot) |
 | [SSH / OpenSSH](https://www.kali.org/tools/openssh/) | [Netcat / nc](https://www.kali.org/tools/netcat/) | [Burpsuite](https://www.kali.org/tools/burpsuite/) | [Metasploit Framework](https://www.kali.org/tools/metasploit-framework/) |
