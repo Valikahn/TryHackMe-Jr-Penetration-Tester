@@ -93,8 +93,8 @@ The assessment rewards persistence and methodical testing and there were several
 In penetration testing, finding one vulnerability does not necessarily mean that the assessment of that system is complete.
 
 ## Web Application Security
-#### Difficulty 8/10
-Web application security was the most difficult part of the examination for me. This reflected my experience during the learning path, where Burp Suite was the tool I found most challenging to learn.
+#### Difficulty 9/10
+Web application security was by far the most difficult part of the Junior Penetration Tester (PT1) Certification and, in my experience, the only section that did not feel junior in difficulty. I encountered numerous blockers and had to return to it several times, often stepping away briefly to reset my thinking before attempting it again. This was not an easy section; it pushed me well beyond my comfort zone and thoroughly tested my technical knowledge, problem-solving abilities, persistence and resilience. This reflected my experience during the learning path, where Burp Suite was the tool I found most challenging to learn.
 
 Burp Suite is extremely capable, but its interface and range of features can initially feel convoluted and at times overwhelming. Understanding how Proxy, Repeater, Intruder and the other modules support different stages of web application testing requires repeated use.
 
