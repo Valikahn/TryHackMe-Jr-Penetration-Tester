@@ -2,7 +2,7 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *Jump*
 
-Click [here](https://tryhackme.com/room/jump) to go to this chanllange now!
+Click [here](https://tryhackme.com/room/jump) to go to this challenge now!
 
 > **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
 >
