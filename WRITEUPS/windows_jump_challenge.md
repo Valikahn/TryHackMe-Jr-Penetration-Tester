@@ -4,11 +4,11 @@
 
 Click [here](https://tryhackme.com/room/windowsjump) to go to the room.
 
-> **Spoiler warning:** This write-up contains the full exploitation chain, but all flag values have been redacted.
+> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
 >
-> **Lab note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab. The attack was performed from my own Kali Linux virtual machine while connected to the TryHackMe VPN.
+> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
 >
-> **Licence:** Unless otherwise stated, this write-up is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Original scripts and code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
 
 ## Lab Summary
 
