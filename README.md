@@ -32,7 +32,7 @@ Writeups may include:
 
 | Section | Challenge | Status |
 |---|---|---|
-| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | Work in Progress |
+| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/recruit_challenge.md) |
 | Web Application Vulnerabilities II | [Support](https://tryhackme.com/room/support) | Work in Progress |
 | Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | Work in Progress |
 | Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/jump_challenge.md) |
