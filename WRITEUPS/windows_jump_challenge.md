@@ -105,7 +105,7 @@ This was the first security weakness: unauthenticated users could retrieve valid
 WinRM accepted the connection initially but rejected command execution, so RDP was used instead.
 
 ```bash
-xfreerdp3 /v:10.130.190.161 /u:thmuser /p:'Password1!' /cert:ignore /dynamic-resolution +clipboard
+xfreerdp3 /v:10.130.190.161 /u:thmuser /p:'<REDACTED>' /cert:ignore /dynamic-resolution +clipboard
 ```
 
 After logging in, a Command Prompt was opened and the current identity was confirmed:
