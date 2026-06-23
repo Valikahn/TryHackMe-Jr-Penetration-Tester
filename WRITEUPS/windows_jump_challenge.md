@@ -95,7 +95,7 @@ The `welcome.txt` file exposed default employee credentials:
 
 ```text
 Username: thmuser
-Password: Password1!
+Password: <REDACTED>
 ```
 
 This was the first security weakness: unauthenticated users could retrieve valid local credentials from a publicly accessible SMB share.
