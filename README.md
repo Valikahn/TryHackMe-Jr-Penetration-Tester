@@ -59,10 +59,10 @@ Writeups may include:
 
 The tools used vary by room, but may include:
 
-| Kali Linux Tools | Kali Linux Tools |
-| --- | --- |
-| [Nmap](https://nmap.org/) | [Rustscan](https://github.com/RustScan/RustScan) |
-| [vsFTP](https://security.appspot.com/vsftpd.html) | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration) |
+| Kali Linux Tools | Kali Linux Tools | Kali Linux Tools | Kali Linux Tools |
+| --- | --- | --- | --- |
+| [Nmap](https://nmap.org/) | [Rustscan](https://github.com/RustScan/RustScan) | [Zaproxy](https://www.kali.org/tools/zaproxy/) | [Chisel](https://www.kali.org/tools/chisel/) |
+| [vsFTP](https://security.appspot.com/vsftpd.html) | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration) | [Sshuttle](https://www.kali.org/tools/sshuttle/) | [Rpivot](https://github.com/klsecservices/rpivot) |
 | [SSH / OpenSSH](https://www.kali.org/tools/openssh/) | [Netcat / nc](https://www.kali.org/tools/netcat/) |
 | [Penelope](https://www.kali.org/tools/penelope) | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04) |
 | [Pspy](https://www.kali.org/tools/pspy/) | [Peass-ng](https://www.kali.org/tools/peass-ng/) |
@@ -76,9 +76,6 @@ The tools used vary by room, but may include:
 | [Enum4linux](https://www.kali.org/tools/enum4linux/) | [Kerberoasting](https://github.com/nidem/kerberoast) |
 | [CeWL](https://www.kali.org/tools/cewl/) | [BloodHound](https://www.kali.org/tools/bloodhound/) |
 | [Burpsuite](https://www.kali.org/tools/burpsuite/) | [Metasploit Framework](https://www.kali.org/tools/metasploit-framework/) |
-| [Sshuttle](https://www.kali.org/tools/sshuttle/) | [Rpivot](https://github.com/klsecservices/rpivot) |
-| [Zaproxy](https://www.kali.org/tools/zaproxy/) | [Chisel](https://www.kali.org/tools/chisel/) |
-| --- | --- |
 
 [sudo privilege enumeration](https://man7.org/linux/man-pages/man5/sudoers.5.html) / [GTFOBins](https://gtfobins.github.io/)
 [Manual Linux privilege escalation enumeration](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
