@@ -1,4 +1,4 @@
-# Windows Jump
+# Windows Jump Challenge
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *Windows Jump*
 
