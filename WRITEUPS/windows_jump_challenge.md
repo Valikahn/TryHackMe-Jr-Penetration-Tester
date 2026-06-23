@@ -169,7 +169,7 @@ This exposed clear-text AutoLogon credentials:
 ```text
 AutoAdminLogon    REG_SZ    1
 DefaultUserName   REG_SZ    notadmin
-DefaultPassword   REG_SZ    P@ssw0rd!
+DefaultPassword   REG_SZ    <REDACTED>
 ```
 
 This provided the next account in the escalation chain.
@@ -185,7 +185,7 @@ runas /user:PRIVESC\notadmin cmd.exe
 Password entered:
 
 ```text
-P@ssw0rd!
+<REDACTED>
 ```
 
 The new context was confirmed:
