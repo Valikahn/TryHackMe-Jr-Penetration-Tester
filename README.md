@@ -63,22 +63,13 @@ The tools used vary by room, but may include:
 | --- | --- | --- | --- |
 | [Nmap](https://nmap.org/) | [Rustscan](https://github.com/RustScan/RustScan) | [Zaproxy](https://www.kali.org/tools/zaproxy/) | [Chisel](https://www.kali.org/tools/chisel/) |
 | [vsFTP](https://security.appspot.com/vsftpd.html) | [Enumerating Active Directory](https://tryhackme.com/room/adenumeration) | [Sshuttle](https://www.kali.org/tools/sshuttle/) | [Rpivot](https://github.com/klsecservices/rpivot) |
-| [SSH / OpenSSH](https://www.kali.org/tools/openssh/) | [Netcat / nc](https://www.kali.org/tools/netcat/) |
-| [Penelope](https://www.kali.org/tools/penelope) | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04) |
-| [Pspy](https://www.kali.org/tools/pspy/) | [Peass-ng](https://www.kali.org/tools/peass-ng/) |
-| [John](https://www.kali.org/tools/john/) | [Impacket-Scripts](https://www.kali.org/tools/impacket-scripts/) |
-| [Hydra](https://www.kali.org/tools/hydra/) | [Hashcat](https://www.kali.org/tools/hashcat/) |
-| [Ffuf](https://www.kali.org/tools/ffuf/) | [NetExec / nxc](https://www.kali.org/tools/netexec/) |
-| [Feroxbuster](https://www.kali.org/tools/feroxbuster/) | [Evil-WinRM](https://www.kali.org/tools/evil-winrm/) |
-| [Evilginx2](https://www.kali.org/tools/evilginx2/) | [Responder](https://www.kali.org/tools/responder/) |
-| [PowerShell](https://www.kali.org/tools/powershell/) | [Dig](https://www.kali.org/tools/bind9/#dig) |
-| [Gobuster](https://www.kali.org/tools/gobuster/) | [Scapy](https://www.kali.org/tools/scapy/) |
-| [Enum4linux](https://www.kali.org/tools/enum4linux/) | [Kerberoasting](https://github.com/nidem/kerberoast) |
-| [CeWL](https://www.kali.org/tools/cewl/) | [BloodHound](https://www.kali.org/tools/bloodhound/) |
-| [Burpsuite](https://www.kali.org/tools/burpsuite/) | [Metasploit Framework](https://www.kali.org/tools/metasploit-framework/) |
-
-[sudo privilege enumeration](https://man7.org/linux/man-pages/man5/sudoers.5.html) / [GTFOBins](https://gtfobins.github.io/)
-[Manual Linux privilege escalation enumeration](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
+| [SSH / OpenSSH](https://www.kali.org/tools/openssh/) | [Netcat / nc](https://www.kali.org/tools/netcat/) | [Burpsuite](https://www.kali.org/tools/burpsuite/) | [Metasploit Framework](https://www.kali.org/tools/metasploit-framework/) |
+| [Penelope](https://www.kali.org/tools/penelope) | [Nmap Post Port Scans](https://tryhackme.com/room/nmap04) | [CeWL](https://www.kali.org/tools/cewl/) | [BloodHound](https://www.kali.org/tools/bloodhound/) |
+| [Pspy](https://www.kali.org/tools/pspy/) | [Peass-ng](https://www.kali.org/tools/peass-ng/) | [Enum4linux](https://www.kali.org/tools/enum4linux/) | [Kerberoasting](https://github.com/nidem/kerberoast) |
+| [John](https://www.kali.org/tools/john/) | [Impacket-Scripts](https://www.kali.org/tools/impacket-scripts/) | [Gobuster](https://www.kali.org/tools/gobuster/) | [Scapy](https://www.kali.org/tools/scapy/) |
+| [Hydra](https://www.kali.org/tools/hydra/) | [Hashcat](https://www.kali.org/tools/hashcat/) | [PowerShell](https://www.kali.org/tools/powershell/) | [Dig](https://www.kali.org/tools/bind9/#dig) |
+| [Ffuf](https://www.kali.org/tools/ffuf/) | [NetExec / nxc](https://www.kali.org/tools/netexec/) | [Evilginx2](https://www.kali.org/tools/evilginx2/) | [Responder](https://www.kali.org/tools/responder/) |
+| [Feroxbuster](https://www.kali.org/tools/feroxbuster/) | [Evil-WinRM](https://www.kali.org/tools/evil-winrm/) | [Manual Linux privilege escalation enumeration](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html) | [GTFOBins](https://gtfobins.github.io/) |
 
 ## Methodology
 
