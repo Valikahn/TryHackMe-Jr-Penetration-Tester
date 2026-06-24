@@ -68,6 +68,7 @@ The tools used vary by room, but may include:
 | [Hydra](https://www.kali.org/tools/hydra/) | [Hashcat](https://www.kali.org/tools/hashcat/) | [PowerShell](https://www.kali.org/tools/powershell/) | [Dig](https://www.kali.org/tools/bind9/#dig) |
 | [Ffuf](https://www.kali.org/tools/ffuf/) | [NetExec / nxc](https://www.kali.org/tools/netexec/) | [Evilginx2](https://www.kali.org/tools/evilginx2/) | [Responder](https://www.kali.org/tools/responder/) |
 | [Feroxbuster](https://www.kali.org/tools/feroxbuster/) | [Evil-WinRM](https://www.kali.org/tools/evil-winrm/) | [Hacktricks Wiki](https://hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html) | [GTFOBins](https://gtfobins.github.io/) |
+| [Cupp](https://github.com/Mebus/cupp) |  |  |  |
 
 ## Methodology
 
