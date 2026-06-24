@@ -1,14 +1,18 @@
 # Windows Jump Challenge
 
-**Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *Windows Jump*
-
-Click [here](https://tryhackme.com/room/windowsjump) to go to this challenge now!
+**Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *[Windows Jump](https://tryhackme.com/room/windowsjump)*
 
 > **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
 >
 > **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
 >
 > **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+
+## About TryHackMe
+
+This write-up was made possible by the hard work of the TryHackMe team and the wider cyber security community, who continue to create practical and engaging learning environments for aspiring security professionals.
+
+[TryHackMe](http://www.tryhackme.com) is an online cyber security training platform that provides hands-on labs covering penetration testing, networking, web application security, privilege escalation and defensive security. Its rooms allow learners to develop practical technical skills within controlled and authorised environments.
 
 ## Lab Summary
 
