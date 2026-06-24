@@ -2,6 +2,12 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *Capstone Challenge*
 
+## About TryHackMe
+
+This write-up was made possible by the hard work of the TryHackMe team and the wider cyber security community, who continue to create practical and engaging learning environments for aspiring security professionals.
+
+[TryHackMe](http://www.tryhackme.com) is an online cyber security training platform that provides hands-on labs covering penetration testing, networking, web application security, privilege escalation and defensive security. Its rooms allow learners to develop practical technical skills within controlled and authorised environments.
+
 Click [here](https://tryhackme.com/room/metasploitpayloadgeneration) to go to this room now!
 
 > **Spoiler warning:** This write-up contains the full exploitation chain; however, the final NTLM hash and flag value are not shown.
