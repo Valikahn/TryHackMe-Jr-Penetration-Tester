@@ -41,6 +41,8 @@ The main tools used were:
 - Python's built-in HTTP server for payload transfer.
 - `Penelope` for handling reverse-shell sessions.
 
+Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used) to return to the repository README. Section `Tools Commonly Used` has all the links used and will be updated peredically with new tools if used or if links needs become 404.
+
 ## Initial Enumeration
 
 The first step was to identify exposed services on the target.
