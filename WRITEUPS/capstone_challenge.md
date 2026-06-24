@@ -42,7 +42,7 @@ The main tools used were:
 - `msfconsole` for SMB file upload, handler configuration and session management.
 - `Meterpreter` for post-exploitation, password hash extraction and file-system searching.
 
-Click [HERE](README.md) to return to the repository README. The `Tools Commonly Used` section contains links to the tools used throughout these write-ups and can be updated as new tools are introduced.
+Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used) to return to the repository README. Section `Tools Commonly Used` has all the links used and will be updated peredically with new tools if used or if links needs become 404.
 
 ## Initial Enumeration
 
