@@ -47,7 +47,7 @@ Writeups may include:
 | Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | Work in Progress |
 | Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | Work in Progress |
 
-**Other Challenges**
+**Requests**
 
 | Section | Challenge | Status |
 |---|---|---|
