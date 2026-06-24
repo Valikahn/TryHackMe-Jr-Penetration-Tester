@@ -2,12 +2,6 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *Capstone Challenge*
 
-## About TryHackMe
-
-This write-up was made possible by the hard work of the TryHackMe team and the wider cyber security community, who continue to create practical and engaging learning environments for aspiring security professionals.
-
-[TryHackMe](http://www.tryhackme.com) is an online cyber security training platform that provides hands-on labs covering penetration testing, networking, web application security, privilege escalation and defensive security. Its rooms allow learners to develop practical technical skills within controlled and authorised environments.
-
 Click [here](https://tryhackme.com/room/metasploitpayloadgeneration) to go to this room now!
 
 > **Spoiler warning:** This write-up contains the full exploitation chain; however, the final NTLM hash and flag value are not shown.
@@ -15,6 +9,12 @@ Click [here](https://tryhackme.com/room/metasploitpayloadgeneration) to go to th
 > **Lab environment:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
 > 
 > **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+
+## About TryHackMe
+
+This write-up was made possible by the hard work of the TryHackMe team and the wider cyber security community, who continue to create practical and engaging learning environments for aspiring security professionals.
+
+[TryHackMe](http://www.tryhackme.com) is an online cyber security training platform that provides hands-on labs covering penetration testing, networking, web application security, privilege escalation and defensive security. Its rooms allow learners to develop practical technical skills within controlled and authorised environments.
 
 ## Lab Summary
 
