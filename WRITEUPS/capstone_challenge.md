@@ -1,8 +1,6 @@
 # Capstone Challenge
 
-**Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *Capstone Challenge*
-
-Click [here](https://tryhackme.com/room/metasploitpayloadgeneration) to go to this room now!
+**Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *[Capstone Challenge](https://tryhackme.com/room/metasploitpayloadgeneration)*
 
 > **Spoiler warning:** This write-up contains the full exploitation chain; however, the final NTLM hash and flag value are not shown.
 >
