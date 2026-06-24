@@ -32,11 +32,11 @@ Writeups may include:
 
 | Section | Challenge | Status |
 |---|---|---|
-| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/recruit_challenge.md) |
+| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/recruit_challenge.md) |
 | Web Application Vulnerabilities II | [Support](https://tryhackme.com/room/support) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/support_challenge.md) |
-| Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/checkmate_challenge.md) |
-| Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/jump_challenge.md) |
-| Privilege Escalation | [Windows Jump](https://tryhackme.com/room/windowsjump) | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/windows_jump_challenge.md) |
+| Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/checkmate_challenge.md) |
+| Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/jump_challenge.md) |
+| Privilege Escalation | [Windows Jump](https://tryhackme.com/room/windowsjump) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/windows_jump_challenge.md) |
 | Active Directory Security Testing Basics | [Proxy](https://tryhackme.com/room/proxychallenge) | Work in Progress |
 | Active Directory Security Testing Basics | [Forward](https://tryhackme.com/room/forwardchallenge) | Work in Progress |
 | Jr Pentester Challenges | [Domino](https://tryhackme.com/room/domino) | Work in Progress |
