@@ -1,4 +1,5 @@
 # Jump Challenge
+![Jump_Image](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/jump_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *[Jump](https://tryhackme.com/room/jump)*
 
