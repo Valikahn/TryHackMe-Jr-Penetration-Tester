@@ -1,4 +1,5 @@
 # Windows Jump Challenge
+![Windows_Jump_Image](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/windows_jump_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *[Windows Jump](https://tryhackme.com/room/windowsjump)*
 
