@@ -31,7 +31,7 @@ The main tools used were:
 * `sqlmap` for confirming and exploiting the SQL injection vulnerability.
 * Standard Linux utilities such as `nano`, `cat`, `ls`, and `grep`.
 
-Click [HERE](../README.md) to return to the repository README. The `Tools Commonly Used` section contains links to commonly used tools and resources.
+Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used) to return to the repository README. Section `Tools Commonly Used` has all the links used and will be updated peredically with new tools if used or if links needs become 404.
 
 ## Initial Enumeration
 
