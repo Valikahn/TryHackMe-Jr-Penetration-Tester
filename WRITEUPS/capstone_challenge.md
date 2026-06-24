@@ -2,10 +2,10 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *[Capstone Challenge](https://tryhackme.com/room/metasploitpayloadgeneration)*
 
-> **Spoiler warning:** This write-up contains the full exploitation chain; however, the final NTLM hash and flag value are not shown.
+> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
 >
-> **Lab environment:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
-> 
+> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+>
 > **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
 
 ## About TryHackMe
