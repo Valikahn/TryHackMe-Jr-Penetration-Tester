@@ -315,3 +315,7 @@ My main advice to future candidates is to take extensive notes, repeat difficult
 Offensive and defensive security require different mindsets, and it is useful to experience both before deciding where to specialise. The certification has also given me a clearer direction for further development.
 
 Passing PT1 was an important milestone, but it is not the end of the learning process. Penetration testing is a field in which tools, vulnerabilities and defensive technologies continually develop. The most valuable outcome of the journey has therefore been the creation of a stronger methodology and the confidence to approach unfamiliar technical problems independently.
+
+---
+**Made with ❤️ by [V4L1K4HN](https://github.com/Valikahn)**   
+⭐ If this project is useful, consider starring it on GitHub.
