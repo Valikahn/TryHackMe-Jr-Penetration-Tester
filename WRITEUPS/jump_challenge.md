@@ -581,3 +581,7 @@ All tools, commands, payloads and post-exploitation techniques described here we
 The tools and methods documented in this walkthrough represent one successful approach. They are not the only possible techniques, and alternative tools or workflows may produce the same result.
 
 Never test, scan, exploit or access a system without clear and explicit authorisation from its owner.
+
+---
+**Made with ❤️ by [V4L1K4HN](https://github.com/Valikahn)**   
+⭐ If this project is useful, consider starring it on GitHub.
