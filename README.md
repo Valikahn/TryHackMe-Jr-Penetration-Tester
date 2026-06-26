@@ -131,6 +131,6 @@ This licence applies only to original material created by the repository author.
 
 See the [LICENSE](https://github.com/Valikahn/TryHackMe-Writeups/blob/main/LICENSE) file for the complete legal terms.
 
-----
-**Made with ❤️ by [Valikahn](https://github.com/Valikahn)**
+---
+**Made with ❤️ by [Valikahn](https://github.com/Valikahn)**   
 ⭐ If this project is useful, consider starring it on GitHub.
