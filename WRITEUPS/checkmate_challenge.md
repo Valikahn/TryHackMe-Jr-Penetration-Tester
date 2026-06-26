@@ -423,4 +423,3 @@ The tools and methods documented in this walkthrough represent one successful ap
 ---
 **Made with ❤️ by [V4L1K4HN](https://github.com/Valikahn)**   
 ⭐ If this project is useful, consider starring it on GitHub.
-Never test, scan, exploit or access a system without clear and explicit authorisation from its owner.
