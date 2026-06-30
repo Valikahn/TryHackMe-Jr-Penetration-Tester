@@ -10,7 +10,13 @@ Each writeup is written from the perspective of a controlled lab environment. Th
 
 The IP addresses shown in these writeups were allocated during the TryHackMe labs, with the attack performed either from the TryHackMe AttackBox or from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN, including the Paris VPN server where noted.
 
-**PLEASE NOTE:** This repository will **NOT** contain anything from the Jr Penetration Tester (PT1) certification exam! If you are looking for any assistance, answers, guides, walkthroughs you will **NOT** find any of those here, help/assistance is limited, but available via the [TryHackMe Discord](https://discord.com/invite/tryhackme).
+**PLEASE NOTE:** This repository may cover both offensive and defensive learning rooms but is for the Jr Penetration Tester path. The format of each entry will therefore vary according to the subject. For example, an offensive room may focus on enumeration and exploitation, while a defensive room may focus on alert analysis, investigation, detection logic or remediation.
+
+> [!IMPORTANT]
+> This repository will **NEVER** contain material taken from TryHackMe professional certification examinations or other restricted assessments. It will **NOT*** provide any flags, passwords, cracked credentials or confidential material that will slow the rate of learning.
+> 
+> If you are looking for any assistance, answers, guides, specific walkthroughs you will **NOT** find any of those here, help/assistance is limited, but available via the [TryHackMe Discord](https://discord.com/invite/tryhackme).
+
 
 ## Repository Structure
 
