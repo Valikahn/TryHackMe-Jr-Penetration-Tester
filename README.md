@@ -68,7 +68,7 @@ Learn the essential skills to break into penetration testing.
 
 | Section | Challenge | Status |
 |---|---|---|
-| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/recruit_challenge.md) |
+| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/recruit_challenge.md) |
 | Web Application Vulnerabilities II | [Support](https://tryhackme.com/room/support) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/support_challenge.md) |
 | Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/checkmate_challenge.md) |
 | Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/jump_challenge.md) |
