@@ -129,6 +129,24 @@ My general approach is:
 8. Capture flags and document the exact path taken.
 9. Record lessons learned and defensive remediation notes.
 
+## Content and Spoiler Policy
+
+These notes may contain spoilers, command output, vulnerability details and complete attack or investigation paths. Anyone actively completing a room should attempt it independently before reading the associated write-up.
+
+This repository will **`NOT`** intentionally publish any of the following:
+
+- TryHackMe flags or answer strings.
+- Passwords or cracked credentials.
+- Reusable session tokens.
+- Private keys or sensitive certificates.
+- Certification examination content.
+- Copied room instructions or substantial portions of TryHackMe material.
+- Material that TryHackMe or a room author has asked learners not to share.
+
+Where a value is necessary to explain the methodology, it will be represented using a placeholder such as `<TARGET_IP>`, `<USERNAME>` or `<REDACTED>`.
+
+If restricted or sensitive information is included accidentally, please report it through the repository's GitHub [Discussions](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/discussions) or [Issues](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/issues) area so it can be reviewed and removed.
+
 ## Ethical Use Disclaimer
 
 These writeups are for educational purposes only and are based on authorised TryHackMe lab environments.
@@ -139,10 +157,15 @@ Do not use these techniques, tools, or methods against systems, networks, applic
 
 The tools and methods listed in this repository are examples of approaches used during specific rooms or learning exercises. They are not the only possible solutions, and other tools, techniques, or workflows may be used depending on the target environment, room design, and individual methodology.
 
-## Not Spoiler Warning
+## Accuracy and Maintenance
 
-Writeups `MAY` contain spoilers, privilege escalation paths, and command output, sometimes this will be deliberate but other times this will be by mistake, if this is the case please let me know in the [Discussions](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/discussions). If you are actively working through a room, consider attempting it yourself before reading the full walkthrough.
-Writeups `WILL NEVER` contain passwords, cracked or otherwise, no hashes or flags.
+TryHackMe periodically updates, replaces or retires rooms and learning paths. Links, room sequences and path content may therefore change after a write-up is published.
+
+Each write-up should be treated as a record of the room as it appeared on the date documented. Where a material change is identified, the relevant page may be updated or marked as archived.
+
+If you notice a broken link, outdated instruction, formatting problem, technical error or any other noticeable issue within a write-up, please report it through the GitHub repository's **[Issues](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/issues)** tab. When raising an issue, include the name of the affected writeup, a brief description of the problem and, where possible, the relevant section or line.
+
+Constructive corrections are welcome and help keep the repository accurate, useful and maintainable.
 
 ## Connect With Me
 
