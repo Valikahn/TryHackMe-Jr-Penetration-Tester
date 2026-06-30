@@ -53,7 +53,7 @@ No content from the TryHackMe Jr Penetration Tester (PT1) certification examinat
 
 ## Learning Path
 
-Learning Path: [Web Application Pentesting]([https://tryhackme.com/paths](https://tryhackme.com/path/outline/jrpenetrationtester))
+Learning Path: [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
 
 This learning path covers the fundamental skills that will allow you to succeed as a junior penetration tester. Upon completing this path, you will have the practical skills required to perform security assessments against web applications, enterprise networks and active directory.
 
