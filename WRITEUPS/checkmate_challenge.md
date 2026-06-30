@@ -42,7 +42,7 @@ The main tools used were:
 * `sha256sum` for testing candidate filenames against the stored SHA256 value.
 * Standard Linux utilities such as `printf`, `sed`, `cat`, `echo`, loops and redirection for creating and processing targeted wordlists.
 
-Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used) to return to the repository README. Section `Tools Commonly Used` has all the links used and will be updated peredically with new tools if used or if links needs become 404.
+Click [HERE](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester#tools-commonly-used) to return to the repository README. Section `Tools Commonly Used` has all the links used and will be updated peredically with new tools if used or if links needs become 404.
 
 ## Hostname Resolution
 
