@@ -1,5 +1,5 @@
 # Capstone Challenge
-![Banner](././IMAGES/capstone_img.png?raw=true)
+![Banner](../../IMAGES/capstone_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *[Capstone Challenge](https://tryhackme.com/room/metasploitpayloadgeneration)*
 
