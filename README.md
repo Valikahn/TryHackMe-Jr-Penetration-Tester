@@ -18,19 +18,51 @@ The IP addresses shown in these writeups were allocated during the TryHackMe lab
 > If you are looking for any assistance, answers, guides, specific walkthroughs you will **NOT** find any of those here, help/assistance is limited, but available via the [TryHackMe Discord](https://discord.com/invite/tryhackme).
 
 
-## Repository Structure
+## What a Write-up May Include
 
-Writeups may include:
+Depending on the room, challenge and learning objective, a write-up may include:
 
-- Room overview
-- Target and attacker IP details
-- Enumeration steps
-- Initial access
-- Privilege escalation path
-- Flags recovered <REDACTED>
-- Key findings <REDACTED>
-- Lessons learned
-- Remediation notes
+* Room overview and learning objectives
+* Scope and authorised target information
+* Attacker and target IP address details
+* Penetration testing methodology
+* Passive and active reconnaissance
+* Host, port and service enumeration
+* Web application enumeration and testing
+* Network service assessment
+* Vulnerability identification and research
+* Exploit selection and validation
+* Initial access methodology
+* Shell stabilisation and session management
+* Linux or Windows privilege escalation
+* Active Directory enumeration and attack techniques
+* Credential harvesting and authentication testing
+* Lateral movement and pivoting
+* Post-exploitation enumeration
+* Evidence and sanitised command output
+* Flags, credentials and sensitive values marked as `<REDACTED>`
+* Technical findings and their potential impact
+* Challenges, mistakes and troubleshooting steps
+* Lessons learned
+* Defensive recommendations and remediation notes
+* References and supporting documentation
+
+The level of detail will vary between guided rooms and practical challenges. Write-ups are intended to document the methodology, decision-making process and lessons learned rather than provide a simple list of answers.
+
+No content from the TryHackMe Jr Penetration Tester (PT1) certification examination will be published in this repository.
+
+## Learning Path
+
+Learning Path: [Web Application Pentesting]([https://tryhackme.com/paths](https://tryhackme.com/path/outline/jrpenetrationtester)
+
+This learning path covers the fundamental skills that will allow you to succeed as a junior penetration tester. Upon completing this path, you will have the practical skills required to perform security assessments against web applications, enterprise networks and active directory.
+
+Learn the essential skills to break into penetration testing.
+
+- Pentesting fundamentals, methodologies and tactics
+- Full lifecycle from recon to reporting
+- Hands-on web, network and AD hacking
+- Learn core tools used in cybersecurity
 
 ## Published Writeups
 
