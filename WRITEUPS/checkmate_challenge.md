@@ -1,5 +1,5 @@
 # Checkmate Challenge
-![Checkmate_Image](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/checkmate_img.png?raw=true)
+![Banner](./../IMAGES/checkmate_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Password Attacks* | **Challenge:** *[Checkmate](https://tryhackme.com/room/checkmate)*
 
