@@ -143,7 +143,7 @@ This repository will **`NOT`** intentionally publish any of the following:
 - Copied room instructions or substantial portions of TryHackMe material.
 - Material that TryHackMe or a room author has asked learners not to share.
 
-Where a value is necessary to explain the methodology, it will be represented using a placeholder such as `<TARGET_IP>`, `<USERNAME>` or `<REDACTED>`.
+Where a value is necessary to explain the methodology, it will be represented using a placeholder such as `<TARGET_IP>`, `<USERNAME>`, `<EMAIL_ADDRESS>`, or `<REDACTED>`.
 
 If restricted or sensitive information is included accidentally, please report it through the repository's GitHub [Discussions](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/discussions) or [Issues](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/issues) area so it can be reviewed and removed.
 
