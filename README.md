@@ -93,7 +93,7 @@ My general approach is:
 8. Capture flags and document the exact path taken.
 9. Record lessons learned and defensive remediation notes.
 
-## Disclaimer
+## Ethical Use Disclaimer
 
 These writeups are for educational purposes only and are based on authorised TryHackMe lab environments.
 
