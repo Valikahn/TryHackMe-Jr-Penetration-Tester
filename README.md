@@ -26,7 +26,7 @@ Writeups may include:
 - Lessons learned
 - Remediation notes
 
-## Completed Writeups
+## Published Writeups
 
 **Pathway:** [*Jr Penetration Tester*](https://tryhackme.com/path/outline/jrpenetrationtester)
 
