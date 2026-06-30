@@ -37,21 +37,30 @@ Writeups may include:
 | Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/checkmate_challenge.md) |
 | Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/jump_challenge.md) |
 | Privilege Escalation | [Windows Jump](https://tryhackme.com/room/windowsjump) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/windows_jump_challenge.md) |
-| Active Directory Security Testing Basics | [Proxy](https://tryhackme.com/room/proxychallenge) | Work in Progress |
-| Active Directory Security Testing Basics | [Forward](https://tryhackme.com/room/forwardchallenge) | Work in Progress |
-| Jr Pentester Challenges | [Domino](https://tryhackme.com/room/domino) | Work in Progress |
-| Jr Pentester Challenges | [Silent Monitor](https://tryhackme.com/room/silent-monitor) | Work in Progress |
-| Jr Pentester Challenges | [Dead Drop](https://tryhackme.com/room/dead-drop) | Work in Progress |
-| Jr Pentester Challenges | [Operation Promotion](https://tryhackme.com/room/operationpromotion) | Work in Progress |
-| Jr Pentester Challenges | [Operation Coldstart](https://tryhackme.com/room/operationcoldstart) | Work in Progress |
-| Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | Work in Progress |
-| Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | Work in Progress |
+| Active Directory Security Testing Basics | [Proxy](https://tryhackme.com/room/proxychallenge) | Planned |
+| Active Directory Security Testing Basics | [Forward](https://tryhackme.com/room/forwardchallenge) | Planned |
+| Jr Pentester Challenges | [Domino](https://tryhackme.com/room/domino) | Planned |
+| Jr Pentester Challenges | [Silent Monitor](https://tryhackme.com/room/silent-monitor) | Planned |
+| Jr Pentester Challenges | [Dead Drop](https://tryhackme.com/room/dead-drop) | Planned |
+| Jr Pentester Challenges | [Operation Promotion](https://tryhackme.com/room/operationpromotion) | Planned |
+| Jr Pentester Challenges | [Operation Coldstart](https://tryhackme.com/room/operationcoldstart) | Planned |
+| Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | Planned |
+| Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | Planned |
 
 **Requests**
 
 | Section | Challenge | Status |
 |---|---|---|
 | Metasploit: Payload Generation | Capstone Challenge | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/capstone_challenge.md) |
+
+### Status Key
+
+| Status              | Meaning                                                         |
+| ------------------- | --------------------------------------------------------------- |
+| Planned             | The path has been selected but documentation has not started.   |
+| In Progress         | Rooms or modules are currently being completed and documented.  |
+| Complete            | All intended write-ups for the path have been published.        |
+| Archived            | The path or its documentation is no longer actively maintained. |
 
 ## Tools Commonly Used
 
