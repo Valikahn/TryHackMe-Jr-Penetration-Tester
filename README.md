@@ -1,5 +1,5 @@
 # TryHackMe - Jr Penetration Tester Writeups
-![Alt text](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/jrpt_img.png?raw=true)
+![Alt text](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/jrpt_img.png?raw=true)  
 This repository contains my personal [TryHackMe](https://tryhackme.com/) writeups, notes, and walkthroughs from completed rooms and learning paths.
 
 The purpose of this repository is to document my methodology, commands, observations, mistakes, and final exploitation paths in a way that is useful for revision, portfolio building, and future reference.
