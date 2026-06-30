@@ -1,5 +1,5 @@
 # Recruit Challenge
-![Recruit_Image](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/recruit_img.png?raw=true)
+![Banner](./../IMAGES/recruit_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Web Application Vulnerabilities I* | **Challenge:** *[Recruit](https://tryhackme.com/room/recruitwebchallenge)*
 
