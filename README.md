@@ -66,37 +66,37 @@ Learn the essential skills to break into penetration testing.
 
 ## Published Writeups
 
-| Section | Challenge | Status |
+| Section | Challenge | Difficulty | Status |
 |---|---|---|
-| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/recruit_challenge.md) |
-| Web Application Vulnerabilities II | [Support](https://tryhackme.com/room/support) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/support_challenge.md) |
-| Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/checkmate_challenge.md) |
-| Privilege Escalation | [Jump](https://tryhackme.com/room/jump) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/jump_challenge.md) |
-| Privilege Escalation | [Windows Jump](https://tryhackme.com/room/windowsjump) | [Complete](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/windows_jump_challenge.md) |
-| Active Directory Security Testing Basics | [Proxy](https://tryhackme.com/room/proxychallenge) | Planned |
-| Active Directory Security Testing Basics | [Forward](https://tryhackme.com/room/forwardchallenge) | Planned |
-| Jr Pentester Challenges | [Domino](https://tryhackme.com/room/domino) | Planned |
-| Jr Pentester Challenges | [Silent Monitor](https://tryhackme.com/room/silent-monitor) | Planned |
-| Jr Pentester Challenges | [Dead Drop](https://tryhackme.com/room/dead-drop) | Planned |
-| Jr Pentester Challenges | [Operation Promotion](https://tryhackme.com/room/operationpromotion) | Planned |
-| Jr Pentester Challenges | [Operation Coldstart](https://tryhackme.com/room/operationcoldstart) | Planned |
-| Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | Planned |
-| Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | Planned |
+| Web Application Vulnerabilities I | [Recruit](https://tryhackme.com/room/recruitwebchallenge) |  | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/recruit_challenge.md) |
+| Web Application Vulnerabilities II | [Support](https://tryhackme.com/room/support) |  | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/support_challenge.md) |
+| Password Attacks | [Checkmate](https://tryhackme.com/room/checkmate) |  | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/checkmate_challenge.md) |
+| Privilege Escalation | [Jump](https://tryhackme.com/room/jump) |  | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/jump_challenge.md) |
+| Privilege Escalation | [Windows Jump](https://tryhackme.com/room/windowsjump) |  | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/windows_jump_challenge.md) |
+| Active Directory Security Testing Basics | [Proxy](https://tryhackme.com/room/proxychallenge) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Active Directory Security Testing Basics | [Forward](https://tryhackme.com/room/forwardchallenge) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Jr Pentester Challenges | [Domino](https://tryhackme.com/room/domino) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Jr Pentester Challenges | [Silent Monitor](https://tryhackme.com/room/silent-monitor) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Jr Pentester Challenges | [Dead Drop](https://tryhackme.com/room/dead-drop) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Jr Pentester Challenges | [Operation Promotion](https://tryhackme.com/room/operationpromotion) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Jr Pentester Challenges | [Operation Coldstart](https://tryhackme.com/room/operationcoldstart) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) |  | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
 
 **Requests**
 
 | Section | Challenge | Status |
 |---|---|---|
-| Metasploit: Payload Generation | Capstone Challenge | [Completed](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/capstone_challenge.md) |
+| Metasploit: Payload Generation | Capstone Challenge | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/WRITEUPS/capstone_challenge.md) |
 
 ### Status Key
 
-| Status              | Meaning                                                         |
-| ------------------- | --------------------------------------------------------------- |
-| Planned             | The path has been selected but documentation has not started.   |
-| In Progress         | Rooms or modules are currently being completed and documented.  |
-| Complete            | All intended write-ups for the path have been published.        |
-| Archived            | The path or its documentation is no longer actively maintained. |
+| Status | Meaning |
+| --- | --- |
+| ![Planned](https://img.shields.io/badge/Planned-lightgrey) | The path has been selected but documentation has not started. |
+| ![In Progress](https://img.shields.io/badge/In%20Progress-yellow) | Rooms or modules are currently being completed and documented. |
+| ![Complete](https://img.shields.io/badge/Complete-brightgreen) | All intended write-ups for the path have been published. |
+| ![Archived](https://img.shields.io/badge/Archived-red) | The path or its documentation is no longer actively maintained. |
 
 ## Tools Commonly Used
 
