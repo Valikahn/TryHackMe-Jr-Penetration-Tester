@@ -1,5 +1,5 @@
 # Support Challenge
-![Support_Image](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/support_img.png?raw=true)
+![Banner](./../IMAGES/support_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Web Application Vulnerabilities II* | **Challenge:** *[Support](https://tryhackme.com/room/support)*
 
