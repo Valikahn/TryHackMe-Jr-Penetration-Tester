@@ -1,5 +1,7 @@
 # TryHackMe - Junior Penetration Tester (PT1) Certification Review
 ![Alt text](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/jrpt_exam_review.png?raw=true)
+![license](https://img.shields.io/badge/license-CC_BY_4.0-green) ![Completed](https://img.shields.io/badge/pathway-100%25-blue) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/v4l1k4hn) ![GitHub User's stars](https://img.shields.io/github/stars/valikahn?style=flat&logo=github) ![Discord](https://img.shields.io/discord/521382216299839518?style=flat&logo=discord&color=purple)
+
 ## Introduction
 The [TryHackMe](http://www.tryhackme.com) [Junior Penetration Tester certification](https://tryhackme.com/certification/junior-penetration-tester), commonly referred to as PT1, is a practical certification intended to assess the core abilities required of an aspiring penetration tester. Unlike a conventional multiple-choice examination, PT1 requires candidates to complete a structured penetration test across several connected technical areas and produce professional reports explaining their findings.
 
@@ -317,5 +319,7 @@ Offensive and defensive security require different mindsets, and it is useful to
 Passing PT1 was an important milestone, but it is not the end of the learning process. Penetration testing is a field in which tools, vulnerabilities and defensive technologies continually develop. The most valuable outcome of the journey has therefore been the creation of a stronger methodology and the confidence to approach unfamiliar technical problems independently.
 
 ---
-**Made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
+
+**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
 ⭐ If this project is useful, consider starring it on GitHub.
