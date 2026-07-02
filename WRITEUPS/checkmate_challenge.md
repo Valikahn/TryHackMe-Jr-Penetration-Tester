@@ -421,5 +421,7 @@ All tools, commands, payloads and post-exploitation techniques described here we
 The tools and methods documented in this walkthrough represent one successful approach. They are not the only possible techniques, and alternative tools or workflows may produce the same result.
 
 ---
-**Made with ❤️ by [V4L1K4HN](https://github.com/Valikahn)**   
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
+
+**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
 ⭐ If this project is useful, consider starring it on GitHub.
