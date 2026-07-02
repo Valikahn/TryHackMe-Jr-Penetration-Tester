@@ -321,5 +321,5 @@ Passing PT1 was an important milestone, but it is not the end of the learning pr
 ---
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
 
-**Powered on ☕ made with ❤️ by [V4L1K4HN](https://github.com/Valikahn)**  
+**Powered on ☕ made with ❤️ by [V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)**  
 ⭐ If this project is useful, consider starring it on GitHub.
