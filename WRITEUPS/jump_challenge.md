@@ -583,5 +583,7 @@ The tools and methods documented in this walkthrough represent one successful ap
 Never test, scan, exploit or access a system without clear and explicit authorisation from its owner.
 
 ---
-**Made with ❤️ by [V4L1K4HN](https://github.com/Valikahn)**   
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
+
+**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
 ⭐ If this project is useful, consider starring it on GitHub.
