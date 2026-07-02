@@ -1,5 +1,6 @@
 # TryHackMe - Jr Penetration Tester Writeups
 ![Banner](./IMAGES/jrpt_img.png?raw=true)
+![license](https://img.shields.io/badge/license-CC_BY_4.0-green) ![Completed](https://img.shields.io/badge/completed-40%25-blue) [![coffee](https://img.shields.io/badge/buy_me-a_coffee-gold)](https://buymeacoffee.com/v4l1k4hn) ![GitHub User's stars](https://img.shields.io/github/stars/valikahn?style=flat&logo=github) ![Discord](https://img.shields.io/discord/521382216299839518?style=flat&logo=discord&color=purple)
 
 This repository contains my personal [TryHackMe](https://tryhackme.com/) writeups, notes, and walkthroughs from completed rooms and learning paths.
 
@@ -201,5 +202,7 @@ This licence applies only to original material created by the repository author.
 See the [LICENSE](https://github.com/Valikahn/TryHackMe-Writeups/blob/main/LICENSE) file for the complete legal terms.
 
 ---
-**Made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
+
+**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
 ⭐ If this project is useful, consider starring it on GitHub.
