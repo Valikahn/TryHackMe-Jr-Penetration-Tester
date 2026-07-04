@@ -99,6 +99,7 @@ Learn the essential skills to break into penetration testing.
 | ![In Progress](https://img.shields.io/badge/In%20Progress-yellow) | Rooms or modules are currently being completed and documented. |
 | ![Complete](https://img.shields.io/badge/Complete-brightgreen) | All intended write-ups for the path have been published. |
 | ![Archived](https://img.shields.io/badge/Archived-red) | The path or its documentation is no longer actively maintained. |
+| ![Host Error](https://img.shields.io/badge/Host_Error-Reported-orange) | A lab or room issue has been encountered and reported. |
 
 ## Tools Commonly Used
 
