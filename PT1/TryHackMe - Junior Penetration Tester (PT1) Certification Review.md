@@ -1,4 +1,4 @@
-# Junior Penetration Tester (PT1) Certification Review
+# Junior Penetration Tester (PT1) Certification Review ![PathwayCompleted](https://img.shields.io/badge/pt1_exam-passed-brightgreen?style=for-the-badge)
 ![Alt text](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/blob/main/IMAGES/jrpt_exam_review.png?raw=true)  
 [![Pathway](https://img.shields.io/badge/Jr_Penetration_Tester_Pathway-100%25-gold)](https://tryhackme.com/path/outline/jrpenetrationtester) ![PT1](https://img.shields.io/badge/PT1_Certification-PASSED-green) ![license](https://img.shields.io/badge/License-CC_BY_4.0-white) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/v4l1k4hn) ![GitHub User's stars](https://img.shields.io/github/stars/valikahn?style=flat&logo=github) ![Discord](https://img.shields.io/discord/521382216299839518?style=flat&logo=discord&color=purple)
 
