@@ -3,11 +3,22 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Web Application Vulnerabilities I* | **Challenge:** *[Recruit](https://tryhackme.com/room/recruitwebchallenge)*
 
-> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
+> [!IMPORTANT]
+> **Spoiler warning:** This writeup contains part of exploitation chain, however no flag codes are shown in this writeup!
 >
-> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+> **Please note:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN.
 >
-> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
+> 
+> This writeup uses several placeholders to avoid exposing lab-specific or sensitive information:
+>
+> - `<TARGET_IP>` - the IP address assigned to the target host when the TryHackMe machine is started.
+> - `<TUN0_IP>` - the IP address assigned to my Kali Linux VM when connected to the TryHackMe VPN using OpenVPN.
+> - `<REDACTED>` - information intentionally removed from the public writeup, such as flags, credentials, hashes or other challenge-sensitive values.
+>
+> This writeup reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques. To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public writeups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
+
+---
 
 ## About TryHackMe
 
@@ -21,8 +32,8 @@ The objective of this challenge was to assess the Recruit recruitment portal, ob
 
 Confirmed lab details used during the walkthrough:
 
-    Target IP: 10.130.147.44
-    Kali tun0 IP: 192.168.129.186
+    Target IP: <TARGET_IP>
+    Kali tun0 IP: <TUN0_IP>
     Attacker working directory: /tmp/VK
     Application hostname: recruit.thm
 
@@ -44,7 +55,7 @@ Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used)
 The first step was to identify the services exposed by the target.
 
 ```bash
-nmap -Pn -sC -sV -oN /tmp/VK/recruit_initial_nmap.txt 10.130.147.44
+nmap -Pn -sC -sV -oN /tmp/VK/recruit_initial_nmap.txt <TARGET_IP>
 ```
 
 The important findings were:
@@ -68,7 +79,7 @@ nano /etc/hosts
 The following entry was added:
 
 ```text
-10.130.147.44 recruit.thm
+<TARGET_IP> recruit.thm
 ```
 
 The application then resolved correctly at:
@@ -202,7 +213,7 @@ A normal search for `Alice` generated the following authenticated request:
 ```http
 GET /dashboard.php?search=Alice HTTP/1.1
 Host: recruit.thm
-Cookie: PHPSESSID=<ACTIVE_SESSION_COOKIE>
+Cookie: PHPSESSID=<REDACTED>
 ```
 
 The request was captured in Burp Suite and saved to:
@@ -292,7 +303,7 @@ THM{....}
 The following entry was added to `/etc/hosts` so the application hostname resolved correctly:
 
 ```text
-10.130.147.44 recruit.thm
+<TARGET_IP> recruit.thm
 ```
 
 ### 3. Web enumeration
@@ -361,7 +372,7 @@ The vulnerabilities in this lab could be mitigated by:
 
 ## Disclaimer
 
-This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
+This writeup is intended solely for education, training and documentation of an authorised TryHackMe lab.
 
 All tools, commands, payloads and post-exploitation techniques described here were used within a controlled environment provided by TryHackMe. Permission to interact with the target was granted by the platform owner and operator as part of the room.
 
@@ -372,5 +383,5 @@ Never test, scan, exploit or access a system without clear and explicit authoris
 ---
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
 
-**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+**Powered on ☕ made with ❤️ by [V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)**  
 ⭐ If this project is useful, consider starring it on GitHub.
