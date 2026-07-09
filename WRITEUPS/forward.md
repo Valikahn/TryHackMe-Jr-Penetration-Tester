@@ -230,25 +230,27 @@ This found a KeePass database inside the user profile:
 C:\Users\<REDACTED>\Documents\Database.kdbx
 ```
 
-### Moving the Database Through SMB
+### Moving the KeePass Database Through SMB
 
-The `Downloads` SMB share was writable, but its local backing path first had to be confirmed from Windows:
+The `Downloads` SMB share was readable from Kali and was also usable as a file transfer point from the Windows session. Before copying the file, I confirmed the local backing path of the share from Windows:
 
 ```powershell
 Get-SmbShare -Name Downloads | Select-Object Name,Path,Description
 ```
 
-The KeePass database was copied into the share path:
+This showed that the share pointed to C:\Downloads, so the KeePass database could be copied into that location:
 
 ```powershell
 Copy-Item -Path "C:\Users\<REDACTED>\Documents\Database.kdbx" -Destination "C:\Downloads\Database.kdbx" -Force
 ```
 
-It was then downloaded from Kali:
+The file was then pulled down from Kali using smbclient:
 
 ```bash
 smbclient //<TARGET_IP>/Downloads -U 'ctf.local/<REDACTED>%<REDACTED>' -c 'get Database.kdbx'
 ```
+
+This transfer was useful for offline analysis and confirmed that the database could be moved out of the Windows session. However, the successful credential recovery was completed from the KeePass application inside the RDP session, where the database unlocked using the selected Windows User Account option.
 
 ### Reviewing the KeePass Database
 
@@ -258,21 +260,46 @@ An attempt was made to extract the KeePass hash with `keepass2john`, but the loc
 File version '<REDACTED>' is currently not supported
 ```
 
-Instead, KeePassXC tooling was used to work with the database. The database contained a credential entry that led to a Help Desk account:
+Although the database was copied to Kali for offline analysis, the successful route did not require cracking the KeePass database. While logged in through RDP, I pressed the Windows key, searched for KeePass, and opened the KeePass application directly on the target.
 
-```text
+When prompted to unlock the database, the Windows User Account option was already selected. Clicking OK unlocked the database without requiring a separate password or key file. This indicated that the database was protected using the logged-in Windows account context rather than a standalone master password.
+
+The database contained a credential entry for a Help Desk account:
+
+```
 <REDACTED> : <REDACTED>
 ```
 
-The recovered credential was tested successfully:
+The recovered credential was then tested successfully against RDP:
 
 ```bash
 nxc rdp <TARGET_IP> -u '<REDACTED>' -p '<REDACTED>'
 ```
 
+This confirmed that the Help Desk account could be used for interactive access to the target system.
+
 ### Credential Reuse
 
-Further enumeration showed several user profiles on the Domain Controller, including Help Desk-related users and a service account. Testing revealed that one recovered password had been reused by another account:
+Further enumeration showed several user profiles on the Domain Controller, including Help Desk-related users and a service account. These usernames were added into a small `users.txt` file so they could be tested cleanly without repeatedly typing each account name.
+
+```bash
+cat > users.txt << 'EOF'
+<REDACTED>
+<REDACTED>
+<REDACTED>
+<REDACTED>
+EOF
+```
+
+This created a focused username list based on accounts observed during enumeration, rather than using a large generic wordlist. In an Active Directory challenge, this is usually more accurate because valid usernames are often exposed through SMB, RDP sessions, profile directories, BloodHound data, or account enumeration.
+
+The recovered credential was then tested against the collected usernames to check for password reuse:
+
+```bash
+nxc smb <TARGET_IP> -u users.txt -p '<REDACTED>' --continue-on-success
+```
+
+Testing revealed that one recovered password had been reused by another account:
 
 ```bash
 nxc smb <TARGET_IP> -u '<REDACTED>' -p '<REDACTED>'
