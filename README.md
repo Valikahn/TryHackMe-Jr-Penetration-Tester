@@ -1,4 +1,4 @@
-# Jr Penetration Tester Writeups ![PathwayCompleted](https://img.shields.io/badge/pathway-passed-brightgreen?style=for-the-badge)
+# Jr Penetration Tester Writeups ![PathwayCompleted](https://img.shields.io/badge/pathway-completed-brightgreen?style=for-the-badge)
 ![Banner](./IMAGES/jrpt_img.png?raw=true)
 ![License](https://img.shields.io/badge/license-CC_BY_4.0-green) ![Writeups](https://img.shields.io/badge/completed_writeup-6/15-blue) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/v4l1k4hn) ![GitHub User's stars](https://img.shields.io/github/stars/valikahn?style=flat&logo=github) ![Discord](https://img.shields.io/discord/521382216299839518?style=flat&logo=discord&color=purple)
 
