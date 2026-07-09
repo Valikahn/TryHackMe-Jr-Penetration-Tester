@@ -73,20 +73,26 @@ The HTTP service returned the page title `Recruit`, confirming that the main att
 The application expected the hostname `recruit.thm`, so the Kali hosts file was updated before continuing.
 
 ```bash
-nano /etc/hosts
+echo "<TARGET_IP> recruit.thm" | sudo tee -a /etc/hosts
 ```
 
-The following entry was added:
+The mapping was confirmed using:
 
-```text
-<TARGET_IP> recruit.thm
+```bash
+getent hosts recruit.thm
 ```
 
-The application then resolved correctly at:
+The VPN route and local tunnel interface were also checked:
 
-```text
-http://recruit.thm/
+```bash
+ip route get <TARGET_IP>
+ip -br address show tun0
 ```
+
+This confirmed that traffic to the target was routed through `tun0` using the Kali VPN address `<TUN0_IP>`.
+
+> [!TIP]
+> When using your own Kali VM, the `/etc/hosts` file is especially important in these TryHackMe web challenges. Many rooms rely on hostname-based routing, virtual hosts, cookies, redirects or application logic that will not behave correctly if the hostname is missing. Over time, `/etc/hosts` can become cluttered with old lab entries, so it is advantageous to keep it clear, tidy and focused on the challenge currently being worked on. A messy hosts file is basically DNS spaghetti - technically edible, but nobody sensible wants it.
 
 ## Reviewing the Login Page and API Documentation
 
