@@ -331,6 +331,9 @@ The expected entry was:
 <TARGET_IP> dc01.ctf.local dc01 ctf.local
 ```
 
+> [!TIP]
+> When using your own Kali VM, the `/etc/hosts` file is especially important in these TryHackMe web challenges. Many rooms rely on hostname-based routing, virtual hosts, cookies, redirects or application logic that will not behave correctly if the hostname is missing. Over time, `/etc/hosts` can become cluttered with old lab entries, so it is advantageous to keep it clear, tidy and focused on the challenge currently being worked on. A messy hosts file is basically DNS spaghetti - technically edible, but nobody sensible wants it.
+
 ### BloodHound Collection
 
 BloodHound data was collected using the `svc.scanner` credential.
