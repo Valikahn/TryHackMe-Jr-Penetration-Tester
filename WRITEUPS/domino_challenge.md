@@ -3,22 +3,22 @@
 **Pathway:** *Jr Penetration Tester* | **Section:** *Jr Pentester Challenges* | **Challenge:** *[Domino](https://tryhackme.com/room/domino)*
 
 > [!IMPORTANT]
-> **Spoiler warning:** This write-up documents the exploitation chain used to complete the room, but no live flag values are shown.
+> **Spoiler warning:** This writeup documents the exploitation chain used to complete the room, but no live flag values are shown.
 >
 > **Please note:** The IP addresses used during testing were allocated by TryHackMe. The attack was performed from my own Kali Linux VM using OpenVPN connected to the TryHackMe VPN.
 >
-> **License:** Unless otherwise stated, all write-ups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
+> **License:** Unless otherwise stated, all writeups and documentation in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any original scripts or code snippets are provided under the [MIT Licence](https://opensource.org/license/mit/).
 >
-> This write-up uses several placeholders to avoid exposing lab-specific or sensitive information:
+> This writeup uses several placeholders to avoid exposing lab-specific or sensitive information:
 >
 > - `<TARGET_IP>` - the IP address assigned to the target host when the TryHackMe machine is started.
 > - `<TUN0_IP>` - the IP address assigned to my Kali Linux VM when connected to the TryHackMe VPN using OpenVPN.
-> - `<REDACTED>` - information intentionally removed from the public write-up, such as credentials, hashes, tokens, secrets, user-specific values or other challenge-sensitive material.
+> - `<REDACTED>` - information intentionally removed from the public writeup, such as credentials, hashes, tokens, secrets, user-specific values or other challenge-sensitive material.
 > - `THM{....}` - a redacted TryHackMe flag value.
 >
-> This write-up reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques.
+> This writeup reflects my own route through the challenge. Other learners may solve the room using different tools, commands or techniques.
 >
-> To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public write-ups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
+> To preserve the integrity of the challenge and to act responsibly towards TryHackMe and the wider learning community, I choose what to redact from my public writeups unless I am asked by TryHackMe or another appropriate party to redact or remove additional material.
 
 **Confirmed lab details used during testing:**
 
@@ -39,11 +39,11 @@ When using your own Kali VM, the `/etc/hosts` file is especially important in th
 
 ## About TryHackMe
 
-This write-up was made possible by the hard work of the TryHackMe team and the wider cyber security community, who continue to create practical and engaging learning environments for aspiring security professionals.
+This writeup was made possible by the hard work of the TryHackMe team and the wider cyber security community, who continue to create practical and engaging learning environments for aspiring security professionals.
 
 [TryHackMe](https://tryhackme.com/) is an online cyber security training platform that provides hands-on, browser-based and VPN-accessible labs across penetration testing, networking, web application security, privilege escalation, Active Directory and defensive security. Its rooms provide controlled and authorised environments where learners can practise realistic attack paths without targeting real-world systems.
 
-This write-up documents the **Domino** challenge from the **Jr Penetration Tester** pathway. The room focuses on chaining several smaller weaknesses together until they produce full compromise. The key theme is that no single issue needs to be spectacular on its own; the danger comes from how each weakness knocks over the next.
+This writeup documents the **Domino** challenge from the **Jr Penetration Tester** pathway. The room focuses on chaining several smaller weaknesses together until they produce full compromise. The key theme is that no single issue needs to be spectacular on its own; the danger comes from how each weakness knocks over the next.
 
 ## Lab Summary
 
@@ -184,7 +184,7 @@ config.enc - Encrypted application configuration
 Decryption key reference: see static/app.js
 ```
 
-The JavaScript file contained a deployment note referencing the backup decryption key. The actual key value has been redacted from this public write-up.
+The JavaScript file contained a deployment note referencing the backup decryption key. The actual key value has been redacted from this public writeup.
 
 ```bash
 curl -s http://nexuscorp.local/static/app.js
