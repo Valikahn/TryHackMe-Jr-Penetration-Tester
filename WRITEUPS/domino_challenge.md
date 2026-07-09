@@ -29,14 +29,6 @@ Provisioned hostname: nexuscorp.local
 Attacker working directory: /tmp/VK
 ```
 
-The target IP address was added to the local hosts file so that the NexusCorp hostname resolved correctly from the Kali VM:
-
-```bash
-echo "<TARGET_IP> nexuscorp.local" | sudo tee -a /etc/hosts
-```
-
-When using your own Kali VM, the `/etc/hosts` file is especially important in these TryHackMe web challenges. Many rooms rely on hostname-based routing, virtual hosts, cookies, redirects or application logic that will not behave correctly if the hostname is missing. Over time, `/etc/hosts` can become cluttered with old lab entries, so it is advantageous to keep it clear, tidy and focused on the challenge currently being worked on. A messy hosts file is basically DNS spaghetti - technically edible, but nobody sensible wants it.
-
 ## About TryHackMe
 
 This writeup was made possible by the hard work of the TryHackMe team and the wider cyber security community, who continue to create practical and engaging learning environments for aspiring security professionals.
@@ -113,6 +105,9 @@ ip -br address show tun0
 ```
 
 This confirmed that traffic to the target was routed through `tun0` using the Kali VPN address `<TUN0_IP>`.
+
+> [!TIP]
+> When using your own Kali VM, the `/etc/hosts` file is especially important in these TryHackMe web challenges. Many rooms rely on hostname-based routing, virtual hosts, cookies, redirects or application logic that will not behave correctly if the hostname is missing. Over time, `/etc/hosts` can become cluttered with old lab entries, so it is advantageous to keep it clear, tidy and focused on the challenge currently being worked on. A messy hosts file is basically DNS spaghetti - technically edible, but nobody sensible wants it.
 
 ### Port and Service Enumeration
 
