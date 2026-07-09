@@ -92,8 +92,6 @@ Later, after Kerberos-based tooling was used, the hosts file also needed the Dom
 echo "<TARGET_IP> DC01.ctf.local DC01 ctf.local" | sudo tee -a /etc/hosts
 ```
 
-This step is especially important when using your own Kali VM. Over time, `/etc/hosts` can become cluttered with old TryHackMe room entries. If a stale hostname points to a previous target IP, Kerberos and Impacket tools may fail with confusing timeout or name resolution errors. Keeping `/etc/hosts` clear, tidy and specific to the current challenge saves a lot of pain later. Future me will still ignore this advice, but at least it is written down.
-
 The hosts file was checked with:
 
 ```bash
@@ -101,6 +99,9 @@ getent hosts DC01.ctf.local
 ```
 
 The expected result was that `DC01.ctf.local` resolved only to `<TARGET_IP>`.
+
+> [!TIP]
+> When using your own Kali VM, the `/etc/hosts` file is especially important in these TryHackMe web challenges. Many rooms rely on hostname-based routing, virtual hosts, cookies, redirects or application logic that will not behave correctly if the hostname is missing. Over time, `/etc/hosts` can become cluttered with old lab entries, so it is advantageous to keep it clear, tidy and focused on the challenge currently being worked on. A messy hosts file is basically DNS spaghetti - technically edible, but nobody sensible wants it.
 
 ### Port and Service Scan
 
