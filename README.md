@@ -20,9 +20,9 @@ The IP addresses shown in these writeups were allocated during the TryHackMe lab
 > If you are looking for any assistance, answers, guides, specific walkthroughs you will **NOT** find any of those here, help/assistance is limited, but available via the [TryHackMe Discord](https://discord.com/invite/tryhackme).
 
 
-## What a Write-up May Include
+## What a writeup May Include
 
-Depending on the room, challenge and learning objective, a write-up may include:
+Depending on the room, challenge and learning objective, a writeup may include:
 
 * Room overview and learning objectives
 * Scope and authorised target information
@@ -49,7 +49,7 @@ Depending on the room, challenge and learning objective, a write-up may include:
 * Defensive recommendations and remediation notes
 * References and supporting documentation
 
-The level of detail will vary between guided rooms and practical challenges. Write-ups are intended to document the methodology, decision-making process and lessons learned rather than provide a simple list of answers.
+The level of detail will vary between guided rooms and practical challenges. writeups are intended to document the methodology, decision-making process and lessons learned rather than provide a simple list of answers.
 
 No content from the TryHackMe Jr Penetration Tester (PT1) certification examination will be published in this repository.
 
@@ -97,7 +97,7 @@ Learn the essential skills to break into penetration testing.
 | --- | --- |
 | ![Planned](https://img.shields.io/badge/Planned-lightgrey) | The path has been selected but documentation has not started. |
 | ![In Progress](https://img.shields.io/badge/In%20Progress-yellow) | Rooms or modules are currently being completed and documented. |
-| ![Complete](https://img.shields.io/badge/Complete-brightgreen) | All intended write-ups for the path have been published. |
+| ![Complete](https://img.shields.io/badge/Complete-brightgreen) | All intended writeups for the path have been published. |
 | ![Archived](https://img.shields.io/badge/Archived-red) | The path or its documentation is no longer actively maintained. |
 | ![Issue Reported](https://img.shields.io/badge/Issue-Reported-orange) | A lab or room issue has been encountered and reported. |
 
@@ -134,7 +134,7 @@ My general approach is:
 
 ## Content and Spoiler Policy
 
-These notes may contain spoilers, command output, vulnerability details and complete attack or investigation paths. Anyone actively completing a room should attempt it independently before reading the associated write-up.
+These notes may contain spoilers, command output, vulnerability details and complete attack or investigation paths. Anyone actively completing a room should attempt it independently before reading the associated writeup.
 
 This repository will **`NOT`** intentionally publish any of the following:
 
@@ -146,7 +146,10 @@ This repository will **`NOT`** intentionally publish any of the following:
 - Copied room instructions or substantial portions of TryHackMe material.
 - Material that TryHackMe or a room author has asked learners not to share.
 
-Where a value is necessary to explain the methodology, it will be represented using a placeholder such as `<TARGET_IP>`, `<TUN0_IP>`, or `<REDACTED>`.
+> [!NOTE]
+> Some values in this writeup have been intentionally redacted to protect the integrity of the challenge and prevent unintended spoilers. Placeholders such as `<TARGET_IP>` and `<TUN0_IP>` are used where IP addresses were required to explain the methodology without exposing environment-specific details. Other sensitive or challenge-revealing information has been replaced with `<REDACTED>`. Any flags have also been redacted, either as `THM{...}` for TryHackMe-style flags or as `<REDACTED>` where the flag format differs.
+>
+> These redactions allow the process to be explained clearly while ensuring the final answer, challenge secrets, and key identifying details are not disclosed.
 
 If restricted or sensitive information is included accidentally, please report it through the repository's GitHub [Discussions](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/discussions) or [Issues](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/issues) area so it can be reviewed and removed.
 
@@ -162,11 +165,11 @@ The tools and methods listed in this repository are examples of approaches used 
 
 ## Accuracy and Maintenance
 
-TryHackMe periodically updates, replaces or retires rooms and learning paths. Links, room sequences and path content may therefore change after a write-up is published.
+TryHackMe periodically updates, replaces or retires rooms and learning paths. Links, room sequences and path content may therefore change after a writeup is published.
 
-Each write-up should be treated as a record of the room as it appeared on the date documented. Where a material change is identified, the relevant page may be updated or marked as archived.
+Each writeup should be treated as a record of the room as it appeared on the date documented. Where a material change is identified, the relevant page may be updated or marked as archived.
 
-If you notice a broken link, outdated instruction, formatting problem, technical error or any other noticeable issue within a write-up, please report it through the GitHub repository's **[Issues](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/issues)** tab. When raising an issue, include the name of the affected writeup, a brief description of the problem and, where possible, the relevant section or line.
+If you notice a broken link, outdated instruction, formatting problem, technical error or any other noticeable issue within a writeup, please report it through the GitHub repository's **[Issues](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/issues)** tab. When raising an issue, include the name of the affected writeup, a brief description of the problem and, where possible, the relevant section or line.
 
 Constructive corrections are welcome and help keep the repository accurate, useful and maintainable.
 
