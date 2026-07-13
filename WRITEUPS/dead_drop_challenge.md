@@ -37,8 +37,9 @@ All challenge-specific credentials, account names, group names, permission names
 
 Confirmed lab details used during the walkthrough:
 
-![Banner](./../IMAGES/deaddrop_network.png?raw=true)  
-***TryHackMe DeadDrop***: [Room Link](https://tryhackme.com/room/dead-drop)
+<p align="center">
+  <img src="./../IMAGES/deaddrop_network.png?raw=true" alt="Challenge_Network_Diagram" />
+</p>
 
 ```text
 DEADDROP-DC: 192.168.11.100
