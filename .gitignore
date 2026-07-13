@@ -1,0 +1,5 @@
+# Visual Studio 2015/2017/2019/2022 cache/options directory
+.vs/
+
+# Ignore the .gitignore file
+.gitignore
