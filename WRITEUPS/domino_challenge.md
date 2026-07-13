@@ -1,4 +1,5 @@
-# Domino Challenge ![Banner](./../IMAGES/domino_img.png?raw=true)
+# Domino Challenge
+![Banner](./../IMAGES/domino_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Jr Pentester Challenges* | **Challenge:** *[Domino](https://tryhackme.com/room/domino)*
 
