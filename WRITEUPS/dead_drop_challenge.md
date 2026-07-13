@@ -1,6 +1,6 @@
 # Dead Drop Challenge
 
-![Banner](./../IMAGES/dead_drop_img.png?raw=true)
+![Banner](./../IMAGES/deaddrop_img.png?raw=true)
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Jr Pentester Challenges* | **Challenge:** *[Dead Drop](https://tryhackme.com/room/dead-drop)*
 
@@ -37,7 +37,8 @@ All challenge-specific credentials, account names, group names, permission names
 
 Confirmed lab details used during the walkthrough:
 
-![Banner](./../IMAGES/deaddrop_network.png?raw=true)
+![Banner](./../IMAGES/deaddrop_network.png?raw=true)  
+***TryHackMe DeadDrop***: [Room Link](https://tryhackme.com/room/dead-drop)
 
 ```text
 DEADDROP-DC: 192.168.11.100
