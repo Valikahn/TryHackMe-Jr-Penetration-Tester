@@ -1,8 +1,5 @@
-# Operation Promotion Challenge
-
-<!-- Add a room banner here when available:
+# Operation Promotion Challenge  
 ![Banner](./../IMAGES/operation_promotion_img.png?raw=true)
--->
 
 **Pathway:** *Jr Penetration Tester* | **Section:** *Jr Pentester Challenges* | **Challenge:** *[Operation Promotion](https://tryhackme.com/room/operationpromotion)*
 
