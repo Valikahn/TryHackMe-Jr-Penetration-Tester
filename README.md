@@ -82,8 +82,8 @@ Learn the essential skills to break into penetration testing.
 | 10 | Jr Pentester Challenges | [Dead Drop](https://tryhackme.com/room/dead-drop) | ![Medium](https://img.shields.io/badge/Medium-orange) | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](./WRITEUPS/dead_drop_challenge.md) |
 | 11 | Jr Pentester Challenges | [Operation Promotion](https://tryhackme.com/room/operationpromotion) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](./WRITEUPS/operation_promotion_challenge.md) |
 | 12 | Jr Pentester Challenges | [Operation Coldstart](https://tryhackme.com/room/operationcoldstart) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | [![Complete](https://img.shields.io/badge/Complete-brightgreen)](./WRITEUPS/operation_coldstart_challenge.md) |
-| 13 | Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
-| 14 | Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | ![Medium](https://img.shields.io/badge/Medium-orange) | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| 13 | Jr Pentester Challenges | [Net Sec Challenge](https://tryhackme.com/room/netsecchallenge) | ![Easy](https://img.shields.io/badge/Easy-brightgreen) | ![In Progress](https://img.shields.io/badge/In%20Progress-yellow) |
+| 14 | Jr Pentester Challenges | [Interceptor](https://tryhackme.com/room/interceptor) | ![Medium](https://img.shields.io/badge/Medium-orange) | ![In Progress](https://img.shields.io/badge/In%20Progress-yellow) |
 
 **Requests**
 
