@@ -151,7 +151,7 @@ This repository will **`NOT`** intentionally publish any of the following:
 >
 > These redactions allow the process to be explained clearly while ensuring the final answer, challenge secrets, and key identifying details are not disclosed.
 
-If restricted or sensitive information is included accidentally, please report it through the repository's GitHub [Discussions](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/discussions) or [Issues](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/issues) area so it can be reviewed and removed.
+If restricted or sensitive information is included accidentally, please report it through the repository's GitHub [Discussions](https://github.com/Valikahn/TryHackMe-Jr-Penetration-Tester/discussions) area so it can be reviewed and removed.
 
 ## Ethical Use Disclaimer
 
